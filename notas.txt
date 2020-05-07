@@ -1,0 +1,1 @@
+Este arquivo foi criado por Node.js!
