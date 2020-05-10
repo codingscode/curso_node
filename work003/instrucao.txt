@@ -1,0 +1,9 @@
+www.npmjs.com
+https://www.npmjs.com/package/validator
+  ^ checar lista de validators
+
+
+
+em terminal da pasta: npm init
+" : npm i validator
+
