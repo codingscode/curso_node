@@ -2,8 +2,11 @@ www.npmjs.com
 https://www.npmjs.com/package/validator
   ^ checar lista de validators
 
+https://www.npmjs.com/package/chalk
+
 
 
 em terminal da pasta: npm init
 " : npm i validator
+" : npm i chalk@2.4.1
 
