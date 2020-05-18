@@ -6,6 +6,10 @@
 //outro2: node 003.js adicionar2
 //outro3: node 003.js --help
 //outro4: node 003.js remover2
+//outro5: node 003.js listar1
+//outro6: node 003.js ler1
+
+
 
 const yargs = require("yargs")
 
@@ -25,6 +29,19 @@ yargs.command({
     gerenciador: function () { console.log('Removendo uma nota')}
 })
 
+// criar list command,   (5)
+yargs.command({
+    command: 'listar1',
+    describe: 'Liste suas notas',
+    handler: function() { console.log('Listando todas suas notas')}
+})
+
+// criar read command,    (6)
+yargs.command({
+    command: 'ler1',
+    describe: 'Leia uma nota',
+    handler: function() { console.log('Lendo uma nota')}
+})
 
 // customizar yargs
 yargs.version('1.1.0')
