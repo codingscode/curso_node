@@ -12,6 +12,9 @@
 
 //node 004.js adicionar2 --title="lista de compras"
 //node 004.js adicionar2 
+//node 004.js adicionar2 --title
+//node 004.js adicionar2 --title="Meu Título"
+
 
 
 
@@ -26,7 +29,8 @@ yargs.command({
     builder: {
       title: {
          describe: 'Título Nota',
-         demandOption: true // false
+         demandOption: true, // false
+         type: 'string' // comentar
       }
     },
     handler: function (argv) {
