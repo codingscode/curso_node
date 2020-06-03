@@ -1,13 +1,13 @@
-// node 003.js
-// node 003.js adicionar --title="coisas a comprar"
-// node 003.js help
-// node 003.js --version
-//outro1: node 003.js --help
-//outro2: node 003.js adicionar2
-//outro3: node 003.js --help
-//outro4: node 003.js remover2
-//outro5: node 003.js listar1
-//outro6: node 003.js ler1
+// node 004.js
+// node 004.js adicionar --title="coisas a comprar"
+// node 004.js help
+// node 004.js --version
+//outro1: node 004.js --help
+//outro2: node 004.js adicionar2
+//outro3: node 004.js --help
+//outro4: node 004.js remover2
+//outro5: node 004.js listar1
+//outro6: node 004.js ler1
 
 
 
