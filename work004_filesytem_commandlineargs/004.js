@@ -14,7 +14,8 @@
 //node 004.js adicionar2 
 //node 004.js adicionar2 --titulo
 //node 004.js adicionar2 --titulo="Meu Título"
-
+// node 004.js adicionar2 --titulo="Comprar"
+// node 004.js adicionar2 --titulo="Comprar" --corpo="isto é o que falta pra finalizar"
 
 
 
@@ -27,14 +28,20 @@ yargs.command({
     command: 'adicionar2',
     describe: 'adicionar uma nova nota',
     builder: {
-      titulo: {
-         describe: 'Título Nota',
-         demandOption: true, // false
-         type: 'string' // comentar
-      }
+        titulo: {
+            describe: 'Título Nota',
+            demandOption: true, // false
+            type: 'string' // comentar
+        },
+        corpo: {
+            describe: 'corpo Nota',
+            demandOption: true,
+            type: 'string'
+        }
     },
     handler: function (argv) {
         console.log('Título: ' + argv.titulo)
+        console.log('Corpo: ' + argv.corpo)
     }
 })
 
