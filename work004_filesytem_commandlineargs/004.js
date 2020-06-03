@@ -1,5 +1,5 @@
 // node 004.js
-// node 004.js adicionar --title="coisas a comprar"
+// node 004.js adicionar --titulo="coisas a comprar"
 // node 004.js help
 // node 004.js --version
 //outro1: node 004.js --help
@@ -10,10 +10,10 @@
 //outro6: node 004.js ler1
 
 
-//node 004.js adicionar2 --title="lista de compras"
+//node 004.js adicionar2 --titulo="lista de compras"
 //node 004.js adicionar2 
-//node 004.js adicionar2 --title
-//node 004.js adicionar2 --title="Meu Título"
+//node 004.js adicionar2 --titulo
+//node 004.js adicionar2 --titulo="Meu Título"
 
 
 
@@ -27,14 +27,14 @@ yargs.command({
     command: 'adicionar2',
     describe: 'adicionar uma nova nota',
     builder: {
-      title: {
+      titulo: {
          describe: 'Título Nota',
          demandOption: true, // false
          type: 'string' // comentar
       }
     },
     handler: function (argv) {
-        console.log('Adicionando uma nova nota', argv)
+        console.log('Título: ' + argv.titulo)
     }
 })
 
