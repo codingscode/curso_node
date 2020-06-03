@@ -68,6 +68,8 @@ yargs.command({
 // customizar yargs
 yargs.version('1.1.0')
 
-console.log('novo', yargs.argv)
+yargs.parse()
+
+//console.log('novo', yargs.argv)
 
 
