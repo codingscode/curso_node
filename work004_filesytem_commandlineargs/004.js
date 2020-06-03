@@ -10,6 +10,10 @@
 //outro6: node 004.js ler1
 
 
+//node 004.js adicionar2 --title="lista de compras"
+//node 004.js adicionar2 
+
+
 
 const yargs = require("yargs")
 
@@ -19,28 +23,41 @@ console.log(process.argv)
 yargs.command({
     command: 'adicionar2',
     describe: 'adicionar uma nova nota',
-    handler: function () { console.log('Adicionando uma nova nota')}
+    builder: {
+      title: {
+         describe: 'Título Nota'
+      }
+    },
+    handler: function (argv) {
+        console.log('Adicionando uma nova nota', argv)
+    }
 })
 
 // criar remove command, usar o (outro3, 4)
 yargs.command({
     command: 'remover2',
     describe: 'remover uma nota',
-    handler: function () { console.log('Removendo uma nota')}
+    handler: function () {
+        console.log('Removendo uma nota')
+    }
 })
 
 // criar list command,   (5)
 yargs.command({
     command: 'listar1',
     describe: 'Liste suas notas',
-    handler: function() { console.log('Listando todas suas notas')}
+    handler: function() {
+        console.log('Listando todas suas notas')
+    }
 })
 
 // criar read command,    (6)
 yargs.command({
     command: 'ler1',
     describe: 'Leia uma nota',
-    handler: function() { console.log('Lendo uma nota')}
+    handler: function() {
+        console.log('Lendo uma nota')
+    }
 })
 
 // customizar yargs
