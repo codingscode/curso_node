@@ -1,0 +1,12 @@
+
+links.mead.io/json-sample
+{"name":"Andrew","planet":"Earth","age":27}
+
+
+
+
+
+
+
+
+
