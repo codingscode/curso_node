@@ -1,6 +1,6 @@
 const arquivo_sincronizado = require('fs')
 
-const livro = {
+/* const livro = {
     titulo: 'Ego é o inimigo',
     autor: 'Ryan Holiday'
 }
@@ -24,7 +24,23 @@ console.log(paraObjeto.autor)
 
 console.log('-------------------')
 
-arquivo_sincronizado.writeFileSync('001.2_json.json', livroJson)  // executar node 001_json.js
+arquivo_sincronizado.writeFileSync('001.2_json.json', livroJson)  // executar node 001_json.js */
+
+const dadoBuffer = arquivo_sincronizado.readFileSync('./001.2_json.json')
+console.log(dadoBuffer)
+console.log(typeof dadoBuffer)
+console.log(dadoBuffer.toString())
+
+
+const dadoJSON = dadoBuffer.toString()
+const dado = JSON.parse(dadoJSON)
+
+console.log(dado)
+console.log(dado.titulo)
+console.log(dado.autor)
+
+
+
 
 
 console.log('-------------------')
