@@ -1,3 +1,5 @@
+const arquivo_sincronizado = require('fs')
+
 const livro = {
     titulo: 'Ego é o inimigo',
     autor: 'Ryan Holiday'
@@ -20,11 +22,11 @@ console.log(paraObjeto, typeof paraObjeto)
 console.log(paraObjeto.titulo)
 console.log(paraObjeto.autor)
 
-
-
-
-
 console.log('-------------------')
+
+arquivo_sincronizado.writeFileSync('001.2_json.json', livroJson)  // executar node 001_json.js
+
+
 console.log('-------------------')
 console.log('-------------------')
 console.log('-------------------')
