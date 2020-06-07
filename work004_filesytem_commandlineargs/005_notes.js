@@ -40,3 +40,4 @@ module.exports = {
 // executar node 006_app.js
 // executar node 006_app.js adicionar2 --titulo="t" --corpo="c"
 //  node 006_app.js adicionar2 --titulo="t" --corpo="c"
+//  node 006_app.js adicionar2 --titulo="Lista" --corpo="camisa, calças"
