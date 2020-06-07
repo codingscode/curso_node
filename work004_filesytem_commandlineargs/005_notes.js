@@ -20,3 +20,4 @@ module.exports = {
 }
 
 // executar node 005_notes.js
+// executar node 005_notes.js adicionar2 --titulo="t" --corpo="c"
