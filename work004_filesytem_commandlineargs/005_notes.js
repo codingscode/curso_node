@@ -6,13 +6,23 @@ const pegarNotas = function () {
  
 const adicionarNota = function (titulo, corpo) {
     const notas = carregarNotas()
-    notas.push({
-        titulo: titulo,
-        corpo: corpo
+    const notasDuplicadas = notas.filter(function (nota) {
+        return nota.titulo === titulo
     })
-    
-    //console.log(notas)
-    salvarNotas(notas)     
+
+    if (notasDuplicadas.length === 0) {
+        notas.push({
+            titulo: titulo,
+            corpo: corpo
+        })
+        salvarNotas(notas)
+        console.log('Nova nota adicionada.')    
+    }
+    else {
+        console.log('Nova nota ocupada')
+    }
+
+    //console.log(notas)   
 }
 
 const salvarNotas = function (notas) {
@@ -40,4 +50,5 @@ module.exports = {
 // executar node 006_app.js
 // executar node 006_app.js adicionar2 --titulo="t" --corpo="c"
 //  node 006_app.js adicionar2 --titulo="t" --corpo="c"
+
 //  node 006_app.js adicionar2 --titulo="Lista" --corpo="camisa, calças"
