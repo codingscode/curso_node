@@ -6,7 +6,18 @@ const pegarNotas = function () {
  
 const adicionarNota = function (titulo, corpo) {
     const notas = carregarNotas()
-    console.log(notas)  
+    notas.push({
+        titulo: titulo,
+        corpo: corpo
+    })
+    
+    //console.log(notas)
+    salvarNotas(notas)     
+}
+
+const salvarNotas = function (notas) {
+    const dadoJSON = JSON.stringify(notas)
+    arquivo_sincronizado.writeFileSync('notas_criadas.json', dadoJSON)
 }
 
 const carregarNotas = function () {
