@@ -1,10 +1,8 @@
 const giz = require('chalk')
 const yargs = require('yargs')
-const notas = require('./005_notes')
-
+const notas = require('./005_notes.js')
 
 yargs.version('1.1.0')
-
 
 yargs.command({
     command: 'adicionar2',

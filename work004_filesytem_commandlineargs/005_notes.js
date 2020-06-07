@@ -5,13 +5,20 @@ const pegarNotas = function () {
 }
  
 const adicionarNota = function (titulo, corpo) {
-    const notas = carregarNotas()  
+    const notas = carregarNotas()
+    console.log(notas)  
 }
 
 const carregarNotas = function () {
-    const dadoBuffer = arquivo_sincronizado.readFileSync('notas_criadas.json')
-    const dadoJSON = dadoBuffer.toString()
-    return JSON.parse(dadoJSON)
+    try {
+        const dadoBuffer = arquivo_sincronizado.readFileSync('notas_criadas.json') //
+        const dadoJSON = dadoBuffer.toString()
+        return JSON.parse(dadoJSON)
+    }
+    catch(errro) {
+        return []
+    }
+    
 }
 
 module.exports = {
@@ -19,5 +26,6 @@ module.exports = {
     adicionarNota: adicionarNota
 }
 
-// executar node 005_notes.js
-// executar node 005_notes.js adicionar2 --titulo="t" --corpo="c"
+// executar node 006_app.js
+// executar node 006_app.js adicionar2 --titulo="t" --corpo="c"
+//  node 006_app.js adicionar2 --titulo="t" --corpo="c"
