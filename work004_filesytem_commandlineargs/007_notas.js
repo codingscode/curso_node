@@ -26,7 +26,12 @@ const adicionarNota = function (titulo, corpo) {
 }
 
 const removerNota = function(titulo) {
-    console.log(titulo)
+    const notas = carregarNotas()
+    const notasparamanter = notas.filter(function(nota) {
+        return nota.titulo !== titulo
+    })
+
+    salvarNotas(notasparamanter)
 }
 
 const salvarNotas = function (notas) {
@@ -60,3 +65,4 @@ module.exports = {
 //  node 007.2_app.js adicionar2 --titulo="Lista 2" --corpo="alicate, extensão, pendrive, hd externo"
 
 //  node 007.2_app.js remover2 --titulo="algum titulo"
+//  node 007.2_app.js remover2 --titulo="Lista 3"
