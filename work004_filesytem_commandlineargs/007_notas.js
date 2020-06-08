@@ -1,4 +1,7 @@
 const arquivo_sincronizado = require('fs')
+const chalk = require('chalk')
+
+
 
 const pegarNotas = function () {
     return 'Suas notas...'
@@ -16,10 +19,10 @@ const adicionarNota = function (titulo, corpo) {
             corpo: corpo
         })
         salvarNotas(notas)
-        console.log('Nova nota adicionada.')    
+        console.log(chalk.green.inverse('Nova nota adicionada.'))    
     }
     else {
-        console.log('Nova nota ocupada')
+        console.log(chalk.red.inverse('Nova nota ocupada'))
     }
 
     //console.log(notas)   
@@ -31,7 +34,15 @@ const removerNota = function(titulo) {
         return nota.titulo !== titulo
     })
 
-    salvarNotas(notasparamanter)
+    if (notas.length > notasparamanter.length) {
+        console.log(chalk.green.inverse('Nota removida'))
+        salvarNotas(notasparamanter)
+    }
+    else {
+        console.log(chalk.red.inverse('Nenhuma nota encontrada'))
+    }
+
+    
 }
 
 const salvarNotas = function (notas) {
@@ -66,3 +77,4 @@ module.exports = {
 
 //  node 007.2_app.js remover2 --titulo="algum titulo"
 //  node 007.2_app.js remover2 --titulo="Lista 3"
+//  node 007.2_app.js remover2 --titulo="Lista 2"
