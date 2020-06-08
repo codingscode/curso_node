@@ -25,6 +25,10 @@ const adicionarNota = function (titulo, corpo) {
     //console.log(notas)   
 }
 
+const removerNota = function(titulo) {
+    console.log(titulo)
+}
+
 const salvarNotas = function (notas) {
     const dadoJSON = JSON.stringify(notas)
     arquivo_sincronizado.writeFileSync('notas_criadas2.json', dadoJSON)
@@ -44,7 +48,8 @@ const carregarNotas = function () {
 
 module.exports = {
     pegarNotas: pegarNotas,
-    adicionarNota: adicionarNota
+    adicionarNota: adicionarNota,
+    removerNota: removerNota
 }
 
 // executar node 007.2_app.js
@@ -53,3 +58,5 @@ module.exports = {
 
 //  node 007.2_app.js adicionar2 --titulo="Lista" --corpo="camisa, calças"
 //  node 007.2_app.js adicionar2 --titulo="Lista 2" --corpo="alicate, extensão, pendrive, hd externo"
+
+//  node 007.2_app.js remover2 --titulo="algum titulo"
