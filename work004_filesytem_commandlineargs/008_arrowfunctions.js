@@ -23,8 +23,13 @@ console.log('------------')
 
 const evento = {
     nome: 'Festa de Aniversario',
-    imprimirListaConvidados: function () {
+    listaConvidados: ['Kyle', 'Simon', 'Fabíola', 'Larissa'],
+    imprimirListaConvidados() {
        console.log('Lista de convidados para ' + this.nome)
+
+       this.listaConvidados.forEach(function (convidado) {
+           console.log(convidado + ' está participando ' + this.nome)
+       })
     }
 }
 
