@@ -27,7 +27,7 @@ const evento = {
     imprimirListaConvidados() {
        console.log('Lista de convidados para ' + this.nome)
 
-       this.listaConvidados.forEach(function (convidado) {
+       this.listaConvidados.forEach((convidado) => {   //  arrow functions dont bind their own 'this' value
            console.log(convidado + ' está participando ' + this.nome)
        })
     }
