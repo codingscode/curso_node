@@ -6,16 +6,17 @@
 // 3. Test your work by running the script
 
 const tarefas = {
-    tarefas: [{
-        texto: 'Fazer compras',
-        completo: true
-    },{
-        texto: 'Limpar quintal',
-        completo: false
-    }, {
-        texto: 'Gravar curso',
-        completo: false
-    }]
+    tarefas: [
+        {texto: 'Fazer compras', completo: true},
+        {texto: 'Limpar quintal', completo: false},
+        {texto: 'Gravar curso', completo: false}
+     ],
+     acessarTarefasAFazer() {
+        const tarefasAFazer = this.tarefas.filter((cada) => {
+           return cada.completo === false
+        })
+        return tarefasAFazer
+     }
 }
 
 console.log(tarefas.acessarTarefasAFazer())
