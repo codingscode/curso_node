@@ -9,9 +9,10 @@ const pegarNotas = () => {
  
 const adicionarNota = (titulo, corpo) => {
     const notas = carregarNotas()
-    const notasDuplicadas = notas.filter((nota) => nota.titulo === titulo)
+    
+    const notaDuplicada = notas.find((cada) => cada.titulo === titulo)
 
-    if (notasDuplicadas.length === 0) {
+    if (!notaDuplicada) {
         notas.push({
             titulo: titulo,
             corpo: corpo
@@ -49,6 +50,19 @@ const listarNotas = () => {
     });
 }
 
+const lerNota = (titulo) => {
+    const notas = carregarNotas()
+    const nota = notas.find((cada) => cada.titulo === titulo)
+
+    if (nota) {
+        console.log(chalk.inverse(nota.titulo))
+        console.log(nota.corpo)
+    }
+    else {
+        console.log(chalk.red.inverse('Nota não encontrada!'))
+    }
+}
+
 const salvarNotas = (notas) => {
     const dadoJSON = JSON.stringify(notas)
     arquivo_sincronizado.writeFileSync('notas_criadas3.json', dadoJSON)
@@ -70,7 +84,8 @@ module.exports = {
     pegarNotas: pegarNotas,
     adicionarNota: adicionarNota,
     removerNota: removerNota,
-    listarNotas: listarNotas
+    listarNotas: listarNotas,
+    lerNota: lerNota
 }
 
 // executar node 009.2_app.js
@@ -85,3 +100,7 @@ module.exports = {
 //  node 009.2_app.js remover2 --titulo="Lista 2"
 
 // node 009.2_app.js listar1
+
+// node 009.2_app.js ler1 --titulo="Lista"
+
+

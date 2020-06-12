@@ -50,8 +50,15 @@ yargs.command({
 yargs.command({
     command: 'ler1',
     describe: 'Leia uma nota',
-    handler() {
-        console.log('Lendo uma nota')
+    builder: {
+        titulo: {
+           describe: 'Titulo Nota',
+           demandOption: true,
+           type: 'string'
+        }
+    },
+    handler(argv) {
+        notas.lerNota(argv.titulo)
     }
 })
 
