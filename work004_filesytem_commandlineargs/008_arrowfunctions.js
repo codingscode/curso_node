@@ -34,10 +34,3 @@ const evento = {
 }
 
 evento.imprimirListaConvidados()
-
-
-console.log('------------')
-console.log('------------')
-console.log('------------')
-console.log('------------')
-console.log('------------')
