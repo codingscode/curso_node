@@ -39,6 +39,16 @@ const removerNota = (titulo) => {
     }
 }
 
+const listarNotas = () => {
+    const notas = carregarNotas()
+
+    console.log(chalk.inverse('Suas notas'))
+
+    notas.forEach((cada) => {
+        console.log(cada.titulo)
+    });
+}
+
 const salvarNotas = (notas) => {
     const dadoJSON = JSON.stringify(notas)
     arquivo_sincronizado.writeFileSync('notas_criadas3.json', dadoJSON)
@@ -59,7 +69,8 @@ const carregarNotas = () => {
 module.exports = {
     pegarNotas: pegarNotas,
     adicionarNota: adicionarNota,
-    removerNota: removerNota
+    removerNota: removerNota,
+    listarNotas: listarNotas
 }
 
 // executar node 009.2_app.js
@@ -72,3 +83,5 @@ module.exports = {
 //  node 009.2_app.js remover2 --titulo="algum titulo"
 //  node 009.2_app.js remover2 --titulo="Lista 3"
 //  node 009.2_app.js remover2 --titulo="Lista 2"
+
+// node 009.2_app.js listar1
