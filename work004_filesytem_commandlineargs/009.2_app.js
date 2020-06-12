@@ -1,6 +1,6 @@
 const giz = require('chalk')
 const yargs = require('yargs')
-const notas = require('./007_notas') 
+const notas = require('./009_notas') 
 
 yargs.version('1.1.0')
 
@@ -19,7 +19,7 @@ yargs.command({
             type: 'string'
         }
     },
-    handler: function (argv) {
+    handler(argv) {
         notas.adicionarNota(argv.titulo, argv.corpo)
     }
 })
@@ -34,7 +34,7 @@ yargs.command({
             type: 'string'
         }
     },
-    handler: function (argv) {
+    handler(argv) {
         notas.removerNota(argv.titulo)
     }
 })
@@ -42,7 +42,7 @@ yargs.command({
 yargs.command({
     command: 'listar1',
     describe: 'Liste suas notas',
-    handler: function() {
+    handler() {
         console.log('Listando todas suas notas')
     }
 })
@@ -50,7 +50,7 @@ yargs.command({
 yargs.command({
     command: 'ler1',
     describe: 'Leia uma nota',
-    handler: function() {
+    handler() {
         console.log('Lendo uma nota')
     }
 })

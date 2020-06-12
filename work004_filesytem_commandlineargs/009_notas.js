@@ -3,15 +3,13 @@ const chalk = require('chalk')
 
 
 
-const pegarNotas = function () {
+const pegarNotas = () => {
     return 'Suas notas...'
 }
  
-const adicionarNota = function (titulo, corpo) {
+const adicionarNota = (titulo, corpo) => {
     const notas = carregarNotas()
-    const notasDuplicadas = notas.filter(function (nota) {
-        return nota.titulo === titulo
-    })
+    const notasDuplicadas = notas.filter((nota) => nota.titulo === titulo)
 
     if (notasDuplicadas.length === 0) {
         notas.push({
@@ -28,11 +26,9 @@ const adicionarNota = function (titulo, corpo) {
     //console.log(notas)   
 }
 
-const removerNota = function(titulo) {
+const removerNota = (titulo) => {
     const notas = carregarNotas()
-    const notasparamanter = notas.filter(function(nota) {
-        return nota.titulo !== titulo
-    })
+    const notasparamanter = notas.filter((nota) => nota.titulo !== titulo)
 
     if (notas.length > notasparamanter.length) {
         console.log(chalk.green.inverse('Nota removida'))
@@ -41,18 +37,16 @@ const removerNota = function(titulo) {
     else {
         console.log(chalk.red.inverse('Nenhuma nota encontrada'))
     }
-
-    
 }
 
-const salvarNotas = function (notas) {
+const salvarNotas = (notas) => {
     const dadoJSON = JSON.stringify(notas)
-    arquivo_sincronizado.writeFileSync('notas_criadas2.json', dadoJSON)
+    arquivo_sincronizado.writeFileSync('notas_criadas3.json', dadoJSON)
 }
 
-const carregarNotas = function () {
+const carregarNotas = () => {
     try {
-        const dadoBuffer = arquivo_sincronizado.readFileSync('notas_criadas2.json') //
+        const dadoBuffer = arquivo_sincronizado.readFileSync('notas_criadas3.json') //
         const dadoJSON = dadoBuffer.toString()
         return JSON.parse(dadoJSON)
     }
