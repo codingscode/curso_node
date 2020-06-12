@@ -12,10 +12,10 @@ const tarefas = {
         {texto: 'Gravar curso', completo: false}
      ],
      acessarTarefasAFazer() {
-        const tarefasAFazer = this.tarefas.filter((cada) => {
+        return this.tarefas.filter((cada) => {
            return cada.completo === false
         })
-        return tarefasAFazer
+
      }
 }
 
