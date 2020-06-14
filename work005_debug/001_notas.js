@@ -8,6 +8,7 @@ const adicionarNota = (titulo, corpo) => {
     const notaDuplicada = notas.find((cada) => cada.titulo === titulo)
 
     console.log(notaDuplicada)
+    console.log(titulo)
 
     if (!notaDuplicada) {
         notas.push({
