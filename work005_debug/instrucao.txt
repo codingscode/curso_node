@@ -1,0 +1,6 @@
+
+ir em devtools
+chrome://inspect/#devices
+       apertar botao play
+
+

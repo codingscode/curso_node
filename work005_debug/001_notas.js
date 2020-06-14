@@ -7,8 +7,7 @@ const adicionarNota = (titulo, corpo) => {
     
     const notaDuplicada = notas.find((cada) => cada.titulo === titulo)
 
-    console.log(notaDuplicada)
-    console.log(titulo)
+    debugger
 
     if (!notaDuplicada) {
         notas.push({
@@ -101,4 +100,6 @@ module.exports = {
 // node 001.2_app.js ler1 --titulo="Lista"
 
 //  node 001.2_app.js adicionar2 --titulo="Cursos" --corpo="node.js"
+//  node --inspect-brk 001.2_app.js adicionar2 --titulo="Cursos" --corpo="node.js"
+
 
