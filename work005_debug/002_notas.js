@@ -62,7 +62,7 @@ const lerNota = (titulo) => {
 
 const salvarNotas = (notas) => {
     const dadoJSON = JSON.stringify(notas)
-    arquivo_sincronizado.writeFileSync('notas_criadas1.json', dadoJSON)
+    arquivo_sincronizado.writeFileSync('notas_criadas1.json', dadoJsON)  // de proposito
 }
 
 const carregarNotas = () => {
@@ -84,22 +84,22 @@ module.exports = {
     lerNota: lerNota
 }
 
-// executar node 001.2_app.js
-// executar node 001.2_app.js adicionar2 --titulo="t" --corpo="c"
-//  node 001.2_app.js adicionar2 --titulo="t" --corpo="c"
+// executar node 002.2_app.js
+// executar node 002.2_app.js adicionar2 --titulo="t" --corpo="c"
+//  node 002.2_app.js adicionar2 --titulo="t" --corpo="c"
 
-//  node 001.2_app.js adicionar2 --titulo="Lista" --corpo="camisa, calças"
-//  node 001.2_app.js adicionar2 --titulo="Lista 2" --corpo="alicate, extensão, pendrive, hd externo"
+//  node 002.2_app.js adicionar2 --titulo="Lista" --corpo="camisa, calças"
+//  node 002.2_app.js adicionar2 --titulo="Lista 2" --corpo="alicate, extensão, pendrive, hd externo"
 
-//  node 001.2_app.js remover2 --titulo="algum titulo"
-//  node 001.2_app.js remover2 --titulo="Lista 3"
-//  node 001.2_app.js remover2 --titulo="Lista 2"
+//  node 002.2_app.js remover2 --titulo="algum titulo"
+//  node 002.2_app.js remover2 --titulo="Lista 3"
+//  node 002.2_app.js remover2 --titulo="Lista 2"
 
-// node 001.2_app.js listar1
+// node 002.2_app.js listar1
 
-// node 001.2_app.js ler1 --titulo="Lista"
+// node 002.2_app.js ler1 --titulo="Lista"
 
-//  node 001.2_app.js adicionar2 --titulo="Cursos" --corpo="node.js"
-//  node --inspect-brk 001.2_app.js adicionar2 --titulo="Cursos" --corpo="node.js"
+//  node 002.2_app.js adicionar2 --titulo="Cursos" --corpo="node.js"
+//  node --inspect-brk 002.2_app.js adicionar2 --titulo="Cursos" --corpo="node.js"
 
-
+//  node 002.2_app.js adicionar2 --titulo="Mensagem de Erro" --corpo="execute o"

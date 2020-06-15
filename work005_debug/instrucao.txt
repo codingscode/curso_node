@@ -3,4 +3,32 @@ ir em devtools
 chrome://inspect/#devices
        apertar botao play
 
+---------------------------------------------------------------------
+
+C:\...\work005_debug\node_modules\yargs\yargs.js:1242
+      else throw err
+           ^
+
+ReferenceError: dadoJsON is not defined
+    at salvarNotas (C:\...\work005_debug\002_notas.js:65:63)
+    at Object.adicionarNota (C:\...\work005_debug\002_notas.js:17:9)     
+    at Object.handler (C:\...\work005_debug\002.2_app.js:23:15)
+    at Object.runCommand (C:\...\work005_debug\node_modules\yargs\lib\command.js:240:40)
+    at Object.parseArgs [as _parseArgs] (C:\...\work005_debug\node_modules\yargs\yargs.js:1154:41)
+    at Object.parse (C:\...\work005_debug\node_modules\yargs\yargs.js:599:25)
+    at Object.<anonymous> (C:\...\work005_debug\002.2_app.js:66:7)       
+    at Module._compile (internal/modules/cjs/loader.js:1185:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+    at Module.load (internal/modules/cjs/loader.js:1034:32)
+PS C:\...\work005_debug> 
+
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+
+
+
+
 
