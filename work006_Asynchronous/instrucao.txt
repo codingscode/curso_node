@@ -11,6 +11,7 @@ npm i request
 https://www.npmjs.com/package/postman-request
 
 
+npm i request@2.88
 
 
 
