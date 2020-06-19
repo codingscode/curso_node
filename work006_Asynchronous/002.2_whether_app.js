@@ -6,7 +6,7 @@ const url = 'http://api.weatherstack.com/current?access_key=senha&query=37.8267,
 
 request({url: url, json: true}, (erro, resposta) => {
     //console.log(resposta.body.current)
-    console.log('Isto é atualmente: ' + resposta.body.current.temperature + ' graus. Há uma probabilidade de precipitação de ' + resposta.body.current.precip + ' %')
+    console.log(`Isto é atualmente: ${resposta.body.current.temperature} graus. Há uma probabilidade de precipitação de ${resposta.body.current.precip} %`)
 })
 
 
