@@ -5,9 +5,8 @@ const request = require('request')
 const url = 'http://api.weatherstack.com/current?access_key=senha&query=37.8267,-122.4233'
 
 request({url: url, json: true}, (erro, resposta) => {
-    /* const dado = JSON.parse(resposta.body)
-    console.log(dado.current) */
-    console.log(resposta.body.current)
+    //console.log(resposta.body.current)
+    console.log('Isto é atualmente: ' + resposta.body.current.temperature + ' graus. Há uma probabilidade de precipitação de ' + resposta.body.current.precip + ' %')
 })
 
 
