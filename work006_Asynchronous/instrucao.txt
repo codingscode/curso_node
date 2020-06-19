@@ -7,12 +7,15 @@ http://api.weatherstack.com/current?access_key=senha&query=37.8267,-122.4233
 
 https://www.npmjs.com/package/request
 npm i request
+         https://www.npmjs.com/package/request#requestoptions-callback
+
 
 https://www.npmjs.com/package/postman-request
 
 
 npm i request@2.88
 
+extensao json formatter
 
 
 
