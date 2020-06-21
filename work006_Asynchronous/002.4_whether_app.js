@@ -19,11 +19,14 @@ request({url: url, json: true}, (erro, resposta) => {
     //
 }) */
 
-const geocodeURL = 'https://xapi.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1IjoiaGVyb25uZXMiLCJhIjoiY2tib2VjbHA0MHFlZjJ5bzZrcHJlN2g3ZSJ9.nFfsqkrzJ9HmMTyB-QMucw&limit=1'
+const geocodeURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/12what.json?access_token=pk.eyJ1IjoiaGVyb25uZXMiLCJhIjoiY2tib2VjbHA0MHFlZjJ5bzZrcHJlN2g3ZSJ9.nFfsqkrzJ9HmMTyB-QMucw&limit=1'
 
 request({url: geocodeURL, json: true}, (erro, resposta) => {
     if (erro) {
         console.log('nao foi possivel conectar ao servico de localização')
+    }
+    else if (resposta.body.features.length === 0) {
+        console.log('não é possivel encontrar localização. Tente outra pesquisa.')
     }
     else {
         const latitude = resposta.body.features[0].center[1]
