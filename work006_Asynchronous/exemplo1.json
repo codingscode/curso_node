@@ -1,0 +1,234 @@
+{
+    "type": "FeatureCollection",
+    "query": ["los", "angeles"],
+    "features": [
+        {"id": "place.7397503093427640", "type": "Feature", "place_type": ["place"], "relevance": 1, "properties": {"wikidata": "Q65"},
+            "text": "Los Angeles", "place_name": "Los Angeles, California, United States",
+            "bbox": [-118.521456965901, 33.9018913203336, -118.121305008073, 4.161440999758], "center": [-118.2439, 34.0544],
+            "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -118.2439,
+                34.0544
+            ]
+            },
+            "context": [
+                {
+                    "id": "region.9697035897738010",
+                    "short_code": "US-CA",
+                    "wikidata": "Q99",
+                    "text": "California"
+                },
+                {
+                    "id": "country.19352517729256050",
+                    "short_code": "us",
+                    "wikidata": "Q30",
+                    "text": "United States"
+                }
+            ]
+        },
+        {
+            "id": "place.10952642230180310",
+            "type": "Feature",
+            "place_type": [
+            "place"
+            ],
+            "relevance": 1,
+            "properties": {
+                "wikidata": "Q16910"
+            },
+            "text": "Los Ángeles",
+            "place_name": "Los Ángeles, Bío Bío, Chile",
+            "bbox": [
+                -72.68248,
+                -37.663862,
+                -72.041277,
+                -37.178368
+            ],
+            "center": [
+                -72.35,
+                -37.46667
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.35,
+                    -37.46667
+                ]
+            },
+            "context": [
+                {
+                    "id": "region.12595678294045040",
+                    "short_code": "CL-BI",
+                    "wikidata": "Q2170",
+                    "text": "Bío Bío"
+                },
+                {
+                    "id": "country.11107190100731110",
+                    "short_code": "cl",
+                    "wikidata": "Q298",
+                    "text": "Chile"
+                }
+            ]
+        },
+        {
+            "id": "poi.953482766534",
+            "type": "Feature",
+            "place_type": [
+                "poi"
+            ],
+            "relevance": 1,
+            "properties": {
+                "wikidata": "Q8731",
+                "landmark": true,
+                "address": "1 World Way",
+                "category": "airport",
+                "maki": "airport"
+            },
+            "text": "Los Angeles International Airport (LAX)",
+            "place_name": "Los Angeles International Airport (LAX), 1 World Way, Los Angeles, California 90045, United States",
+            "center": [
+                -118.406829,
+                33.942912
+            ],
+            "geometry": {
+                "coordinates": [
+                    -118.406829,
+                    33.942912
+                ],
+                "type": "Point"
+            },
+            "context": [
+                {
+                    "id": "neighborhood.33720",
+                    "text": "Westchester"
+                },
+                {
+                    "id": "postcode.15395803225252730",
+                    "text": "90045"
+                },
+                {
+                    "id": "place.7397503093427640",
+                    "wikidata": "Q65",
+                    "text": "Los Angeles"
+                },
+                {
+                    "id": "region.9697035897738010",
+                    "short_code": "US-CA",
+                    "wikidata": "Q99",
+                    "text": "California"
+                },
+                {
+                    "id": "country.19352517729256050",
+                    "short_code": "us",
+                    "wikidata": "Q30",
+                    "text": "United States"
+                }
+            ]
+        },
+        {
+            "id": "locality.9858218050180310",
+            "type": "Feature",
+            "place_type": [
+                "locality"
+            ],
+            "relevance": 1,
+            "properties": {
+                "wikidata": "Q390462"
+            },
+            "text": "Los Ángeles",
+            "place_name": "Los Ángeles, 28041, Madrid, Madrid, Spain",
+            "bbox": [
+                -3.70707139897225,
+                40.3456805018361,
+                -3.6930253001356,
+                40.3645357999689
+            ],
+            "center": [
+                -3.69917,
+                40.35667
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.69917,
+                    40.35667
+                ]
+            },
+            "context": [
+                {
+                    "id": "postcode.10232733589850260",
+                    "text": "28041"
+                },
+                {
+                    "id": "place.10708255346562040",
+                    "wikidata": "Q2807",
+                    "text": "Madrid"
+                },
+                {
+                    "id": "region.9525393832562040",
+                    "wikidata": "Q2807",
+                    "text": "Madrid"
+                },
+                {
+                    "id": "country.6536486222570100",
+                    "short_code": "es",
+                    "wikidata": "Q29",
+                    "text": "Spain"
+                }
+            ]
+        },
+        {
+            "id": "neighborhood.2104633",
+            "type": "Feature",
+            "place_type": [
+                "neighborhood"
+            ],
+            "relevance": 1,
+            "properties": {},
+            "text": "Los Angeles Heights - Keystone",
+            "place_name": "Los Angeles Heights - Keystone, San Antonio, Texas 78201, United States",
+            "bbox": [
+                -98.534942,
+                29.453364,
+                -98.514652,
+                29.485214
+            ],
+            "center": [
+                -98.52,
+                29.47
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.52,
+                    29.47
+                ]
+            },
+            "context": [
+                {
+                    "id": "postcode.9559195398572850",
+                    "text": "78201"
+                },
+                {
+                    "id": "place.7333361243253710",
+                    "wikidata": "Q975",
+                    "text": "San Antonio"
+                },
+                {
+                    "id": "region.10515736414342410",
+                    "short_code": "US-TX",
+                    "wikidata": "Q1439",
+                    "text": "Texas"
+                },
+                {
+                    "id": "country.19352517729256050",
+                    "short_code": "us",
+                    "wikidata": "Q30",
+                    "text": "United States"
+                }
+            ]
+        }
+    ],
+    "attribution": "NOTICE: © 2020 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service (https://www.mapbox.com/about/maps/). This response and the information it contains may not be retained. POI(s) provided by Foursquare."
+}
