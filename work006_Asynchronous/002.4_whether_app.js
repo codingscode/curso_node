@@ -7,7 +7,10 @@ const url = 'http://api.weatherstack.com/current?access_key=b8f519c2ac25ebbef290
 request({url: url, json: true}, (erro, resposta) => {
     if (erro) {
        //console.log('***', erro)
-       console.log('nao é possivel conectar ao serviço weather')
+        console.log('nao é possivel conectar ao serviço weather')
+    }
+    else if (resposta.body.error) {
+        console.log('não é possível encontrar a localização')
     }
     else {
         console.log(`Isto é atualmente: ${resposta.body.current.temperature} graus. Há uma probabilidade de precipitação de ${resposta.body.current.precip} %`)
