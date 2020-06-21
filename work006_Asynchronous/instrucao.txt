@@ -36,7 +36,7 @@ https://docs.mapbox.com/api/search/#example-request-forward-geocoding
 }
 -------------------------------------
 
-
+http://api.weatherstack.com/current?access_key=b8f519c2ac25ebbef2903c4bde501052&query=        'bagunçado'
 
 
 

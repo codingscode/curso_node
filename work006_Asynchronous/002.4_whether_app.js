@@ -2,7 +2,7 @@
 const request = require('request')
 
 
-const url = 'http://xapi.weatherstack.com/current?access_key=senha&query=37.8267,-122.4233'
+const url = 'http://api.weatherstack.com/current?access_key=b8f519c2ac25ebbef2903c4bde501052&query='
                                                                                                                     // ?key=value&otherKey=otherValue
 request({url: url, json: true}, (erro, resposta) => {
     if (erro) {
