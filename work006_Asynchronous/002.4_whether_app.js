@@ -5,7 +5,7 @@ const request = require('request')
 const url = 'http://xapi.weatherstack.com/current?access_key=senha&query=37.8267,-122.4233'
                                                                                                                     // ?key=value&otherKey=otherValue
 request({url: url, json: true}, (erro, resposta) => {
-    console.log(erro)
+    console.log('***', erro)
     //console.log(`Isto é atualmente: ${resposta.body.current.temperature} graus. Há uma probabilidade de precipitação de ${resposta.body.current.precip} %`)
 })
 
