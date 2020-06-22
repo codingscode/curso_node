@@ -14,13 +14,16 @@ console.log(nomescurtos)
 const geocode = (endereco, callback) => {
     setTimeout(() => {
         const dado = {latitude: 0, longitude: 0}
-        return dado
+        callback(dado)
     }, 2000)
     
 }
 
-const dado = geocode('Philadelphia')
-console.log(dado)
+geocode('Philadelphia', (param) => {
+    console.log(param)
+})
+
+
 
 
 
