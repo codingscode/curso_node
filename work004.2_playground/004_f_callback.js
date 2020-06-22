@@ -1,4 +1,4 @@
-
+/* 
 setTimeout(() => {
     console.log('2 segundos')
 }, 1000)
@@ -21,7 +21,23 @@ const geocode = (endereco, callback) => {
 
 geocode('Philadelphia', (param) => {
     console.log(param)
+}) */
+
+const adicionar = (num1, num2, callback) => {
+    setTimeout(() => {
+        callback(num1 + num2)
+    }, 2000)
+}
+
+
+adicionar(1, 4, (soma) => {
+    console.log(soma) 
 })
+
+
+
+
+
 
 
 
