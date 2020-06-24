@@ -2,7 +2,7 @@
 const request = require('request')
 
 
-const url = 'http://api.weatherstack.com/current?access_key=senha&query=37.8267,-122.4233'
+/* const url = 'http://api.weatherstack.com/current?access_key=b8f519c2ac25ebbef2903c4bde501052&query=37.8267,-122.4233'
                                                                                                                     // ?key=value&otherKey=otherValue
 request({url: url, json: true}, (erro, resposta) => {
     if (erro) {
@@ -17,9 +17,9 @@ request({url: url, json: true}, (erro, resposta) => {
     }
     
     //
-})
+}) */
 
-const geocodeURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/philadelphia.json?access_token=pk.eyJ1IjoiaGVyb25uZXMiLCJhIjoiY2tib2VjbHA0MHFlZjJ5bzZrcHJlN2g3ZSJ9.nFfsqkrzJ9HmMTyB-QMucw&limit=1'
+/* const geocodeURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/philadelphia.json?access_token=pk.eyJ1IjoiaGVyb25uZXMiLCJhIjoiY2tib2VjbHA0MHFlZjJ5bzZrcHJlN2g3ZSJ9.nFfsqkrzJ9HmMTyB-QMucw&limit=1'
 
 request({url: geocodeURL, json: true}, (erro, resposta) => {
     if (erro) {
@@ -35,6 +35,29 @@ request({url: geocodeURL, json: true}, (erro, resposta) => {
     }
     
 })
+ */
+
+const geocode = (endereco, callback) => {
+    const link = `xhttps://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(endereco)}.json?access_token=pk.eyJ1IjoiaGVyb25uZXMiLCJhIjoiY2tib2VjbHA0MHFlZjJ5bzZrcHJlN2g3ZSJ9.nFfsqkrzJ9HmMTyB-QMucw&limit=1`
+    
+    request({url: link, json: true}, (erro, resposta) => {
+        if (erro) {
+           callback('nao foi possivel conectar ao servico de localizacao!', undefined)
+        }
+        else if (resposta.body.features.length === 0) { 
+           callback('nao foi possivel encontrar localizacao. Tente outra busca.', undefined)
+        }
+
+    })
+}
+
+
+geocode('Philadelphia', (erro, dado) => {
+     console.log('Erro', erro)    
+     console.log('Dado', dado)
+})
+
+
 
 
 // node 002.5_weather_app.js
