@@ -58,7 +58,7 @@ const geocode = (endereco, funcao) => {
 }
 
 
-geocode('Philadelphia', (erro, dado) => {
+geocode('Philadelphia New York', (erro, dado) => {
      console.log('Erro', erro)    
      console.log('Dado', dado)
 })
