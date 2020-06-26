@@ -44,7 +44,7 @@ request({url: geocodeURL, json: true}, (erro, resposta) => {
 }) */
 
 
-previsao(-75.7088, 44.1545, (erro, dado) => {
+previsao('', '', (erro, dado) => {   // ???
     console.log('Erro:', erro)
     console.log('Dado:', dado)
 })
