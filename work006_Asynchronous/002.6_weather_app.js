@@ -1,7 +1,7 @@
 
 const request = require('request')
 
-const geocode = require('./002.6exp_weather_app')
+const previsao = require('./002.6exp_weather_app')
 
 /* const url = 'http://api.weatherstack.com/current?access_key=b8f519c2ac25ebbef2903c4bde501052&query=37.8267,-122.4233'
                                                                                                                     // ?key=value&otherKey=otherValue
@@ -38,9 +38,15 @@ request({url: geocodeURL, json: true}, (erro, resposta) => {
 })
  */
 
-geocode('Philadelphia New York', (erro, dado) => {  // tentar Boston
+/* geocode('Philadelphia New York', (erro, dado) => {  // tentar Boston
      console.log('Erro', erro)    
      console.log('Dado', dado)
+}) */
+
+
+previsao(-75.7088, 44.1545, (erro, dado) => {
+    console.log('Erro:', erro)
+    console.log('Dado:', dado)
 })
 
 // node 002.6_weather_app.js
