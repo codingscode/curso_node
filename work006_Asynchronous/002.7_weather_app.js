@@ -6,18 +6,17 @@ const previsao = require('./002.6exp_weather_app')
 
 geocode('Boston', (erro, dado) => {  
      if (erro) {
-         console.log(erro)
-     }
-     else {
-        console.log('Erro', erro)    
-        console.log('Dado', dado)
-   
-        previsao(dado.latitude, dado.longitude, (erro, dado) => {  
-           console.log('Erro:', erro)
-           console.log('Dado:', dado)
-        })
+         return console.log(erro)
      }
      
+     console.log('Erro', erro)    
+     console.log('Dado', dado)
+   
+     previsao(dado.latitude, dado.longitude, (erro, dado) => {  
+        console.log('Erro:', erro)
+        console.log('Dado:', dado)
+     })
+          
 })
 
 
