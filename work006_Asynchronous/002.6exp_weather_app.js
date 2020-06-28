@@ -1,7 +1,7 @@
 const request = require('request')
 
 const prever = (latitude, longitude, funcao) => {
-    const url = `http://api.weatherstack.com/current?access_key=b8f519c2ac25ebbef2903c4bde501052&query=${latitude},${longitude}`
+    const url = `http://api.weatherstack.com/current?access_key=1494aff90574a6d475ddfb8a9a924ae8&query=${latitude},${longitude}`
     
     console.log(url)
     request({url: url, json: true}, (erro, resposta) => {
