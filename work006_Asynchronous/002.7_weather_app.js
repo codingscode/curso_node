@@ -5,27 +5,28 @@ const previsao = require('./002.6exp_weather_app')
 
 const endereco = process.argv[2]
 
-
-
-console.log(process.argv)
-
-geocode(endereco, (erro, dado) => {  
-     if (erro) {
-         return console.log(erro)
-     }
-     
-     previsao(dado.latitude, dado.longitude, (erro, dadoPrevisao) => {  
+if (!endereco) {
+    console.log('Por favor forneça um endereço.')
+}
+else {
+    geocode(endereco, (erro, dado) => {  
         if (erro) {
             return console.log(erro)
         }
-
-        console.log(dado.localizacao)
-        console.log(dadoPrevisao)
         
-     })
-          
-})
+        previsao(dado.latitude, dado.longitude, (erro, dadoPrevisao) => {  
+           if (erro) {
+               return console.log(erro)
+           }
+   
+           console.log(dado.localizacao)
+           console.log(dadoPrevisao)
+        })
+    })
+}
 
+console.log('-------------------------')
+console.log(process.argv)
 
 // node 002.7_weather_app.js Boston
 // node 002.7_weather_app.js 'Boston'
@@ -33,3 +34,5 @@ geocode(endereco, (erro, dado) => {
 // node 002.7_weather_app.js 'New York'
 // node 002.7_weather_app.js Philadelphia
 
+// node 002.7_weather_app.js
+// node 002.7_weather_app.js Boston
