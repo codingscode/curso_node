@@ -9,16 +9,18 @@ geocode('Boston', (erro, dado) => {
          return console.log(erro)
      }
      
-     console.log('Erro', erro)    
-     console.log('Dado', dado)
+     /* console.log('Erro', erro)    
+     console.log('Dado', dado) */
    
-     previsao(dado.latitude, dado.longitude, (erro, dado) => {  
+     previsao(dado.latitude, dado.longitude, (erro, dadoPrevisao) => {  
         if (erro) {
             return console.log(erro)
         }
 
-        console.log('Erro:', erro)
-        console.log('Dado:', dado)
+        console.log(dado.localizacao)
+        console.log(dadoPrevisao)
+        /* console.log('Erro:', erro)
+        console.log('Dado:', dado) */
      })
           
 })
