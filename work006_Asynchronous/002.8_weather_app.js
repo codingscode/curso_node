@@ -9,17 +9,17 @@ if (!endereco) {
     console.log('Por favor forneça um endereço.')
 }
 else {
-    geocode(endereco, (erro, dado) => {  
+    geocode(endereco, (erro, {latitude, longitude, localizacao}) => {  
         if (erro) {
             return console.log(erro)
         }
         
-        previsao(dado.latitude, dado.longitude, (erro, dadoPrevisao) => {  
+        previsao(latitude, longitude, (erro, dadoPrevisao) => {  
            if (erro) {
                return console.log(erro)
            }
    
-           console.log(dado.localizacao)
+           console.log(localizacao)
            console.log(dadoPrevisao)
         })
     })
@@ -28,11 +28,6 @@ else {
 console.log('-------------------------')
 console.log(process.argv)
 
-// node 002.8_weather_app.js Boston
-// node 002.8_weather_app.js 'Boston'
 
-// node 002.8_weather_app.js 'New York'
-// node 002.8_weather_app.js Philadelphia
+/// node 002.8_weather_app.js 'Boston'
 
-// node 002.8_weather_app.js
-// node 002.8_weather_app.js Boston
