@@ -1,7 +1,7 @@
 const request = require('request')
 
-const geocode = require('./002.5_weather_app/geocode')
-const previsao = require('./002.6exp_weather_app')
+const geocode = require('./002.8.2_geocode')
+const previsao = require('./002.8.1_previsao')
 
 const endereco = process.argv[2]
 
