@@ -13,7 +13,9 @@ const requisicao = https.request(url, (resposta) => {
     })
 
     resposta.on('end', () => {
-        console.log(dado)
+        //console.log(dado)
+        const corpo = JSON.parse(dado)
+        console.log(corpo)
     })
 })
 
