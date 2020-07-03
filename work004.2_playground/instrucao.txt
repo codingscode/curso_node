@@ -28,7 +28,10 @@ const tasks = {
 console.log(tasks.getTasksToDo())
 -----------------------
 
+https://nodejs.org/dist/latest-v14.x/docs/api/http.html
+      https://nodejs.org/dist/latest-v14.x/docs/api/http.html#http_http_request_options_callback
 
+https://nodejs.org/dist/latest-v14.x/docs/api/https.html
 
 
 
