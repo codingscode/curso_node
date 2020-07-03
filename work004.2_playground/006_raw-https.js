@@ -8,11 +8,12 @@ const requisicao = https.request(url, (resposta) => {
 
 
     resposta.on('data', (pedaco) => {
-        console.log(pedaco)        
+        dado += pedaco.toString()
+        //console.log(pedaco)        
     })
 
     resposta.on('end', () => {
-        
+        console.log(dado)
     })
 })
 
