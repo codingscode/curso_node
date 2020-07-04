@@ -10,6 +10,14 @@ aplicacao.get('/ajuda', (req, res) => {
     res.send('Página de Ajuda')
 })
 
+aplicacao.get('/sobre', (req, res) => {
+    res.send('Sobre')
+})
+
+aplicacao.get('/clima', (req, res) => {
+    res.send('Seu Clima')
+})
+
 // app.com
 // app.com/help
 // app.com/about
