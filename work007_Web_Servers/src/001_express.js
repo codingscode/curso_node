@@ -4,7 +4,11 @@ const aplicacao = express()
 
 aplicacao.get('', (req, res) => {
     res.send('Olá Express')
- })
+})
+
+aplicacao.get('/ajuda', (req, res) => {
+    res.send('Página de Ajuda')
+})
 
 // app.com
 // app.com/help
@@ -18,3 +22,6 @@ aplicacao.listen(3000, () => {
 
 // node 001_express.js ou node src/001_express.js
 // localhost:3000
+// nodemon src/001_express.js
+// localhost:3000/ajuda
+// localhost:3000/outro
