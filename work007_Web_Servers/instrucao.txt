@@ -1,0 +1,12 @@
+
+https://expressjs.com/en/starter/installing.html
+
+no terminal da pasta: npm i express
+
+
+
+
+
+
+
+
