@@ -3,11 +3,13 @@ const express = require('express')
 const aplicacao = express()
 
 aplicacao.get('', (req, res) => {
-    res.send('Olá Express')
+    res.send('<h1>Clima</h1>')
 })
 
 aplicacao.get('/ajuda', (req, res) => {
-    res.send('Página de Ajuda')
+    res.send({
+        nome: 'Kyle', idade: 19
+    })
 })
 
 aplicacao.get('/sobre', (req, res) => {
@@ -28,8 +30,8 @@ aplicacao.listen(3000, () => {
 
 
 
-// node 001_express.js ou node src/001_express.js
+
+// nodemon src/002_express.js
 // localhost:3000
-// nodemon src/001_express.js
-// localhost:3000/ajuda
-// localhost:3000/outro
+// localhost:3000/ajuda será um json
+// 
