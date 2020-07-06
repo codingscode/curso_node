@@ -3,6 +3,8 @@ https://expressjs.com/en/starter/installing.html
 
 no terminal da pasta: npm i express
 
+https://nodejs.org/dist/latest-v14.x/docs/api/path.html
+    https://nodejs.org/dist/latest-v14.x/docs/api/path.html#path_path_join_paths
 
 
 

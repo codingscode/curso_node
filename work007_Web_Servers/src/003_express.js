@@ -1,5 +1,8 @@
 const express = require('express')
 
+console.log('1:', __dirname)
+console.log('2:', __filename)
+
 const aplicacao = express()
 
 aplicacao.get('', (req, res) => {
@@ -31,7 +34,7 @@ aplicacao.listen(3000, () => {
 
 
 
-// nodemon src/002_express.js
+// nodemon src/003_express.js
 // localhost:3000
 // localhost:3000/ajuda será um json
 // 
