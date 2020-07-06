@@ -2,8 +2,6 @@ const caminho = require('path')
 
 const express = require('express')
 
-/* console.log(__dirname)
-console.log(caminho.join(__dirname, '../public')) */
 
 const aplicacao = express()
 
@@ -11,21 +9,6 @@ const caminhoDiretorioPublic = caminho.join(__dirname, '../public/')
 
 aplicacao.use(express.static(caminhoDiretorioPublic))
 
-
-aplicacao.get('', (req, res) => {
-    res.send('<h1>Clima</h1>')
-})
-
-aplicacao.get('/ajuda', (req, res) => {
-    res.send([
-        {nome: 'Kyle', idade: 19},
-        {nome: 'sam'}
-    ])
-})
-
-aplicacao.get('/sobre', (req, res) => {
-    res.send('<h1>Sobre</h1>')
-})
 
 aplicacao.get('/clima', (req, res) => {
     res.send({
@@ -43,5 +26,6 @@ aplicacao.listen(3000, () => {
 
 // nodemon src/003_express.js
 // localhost:3000
-// localhost:3000/ajuda será um json
+// localhost:3000/ajuda.html
+// localhost:3000/sobre.html
 // 
