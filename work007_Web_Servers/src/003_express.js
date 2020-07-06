@@ -2,12 +2,12 @@ const caminho = require('path')
 
 const express = require('express')
 
-console.log(__dirname)
-console.log(caminho.join(__dirname, '../public'))
+/* console.log(__dirname)
+console.log(caminho.join(__dirname, '../public')) */
 
 const aplicacao = express()
 
-const caminhoDiretorioPublic = caminho.join(__dirname, '../public')
+const caminhoDiretorioPublic = caminho.join(__dirname, '../public/')
 
 aplicacao.use(express.static(caminhoDiretorioPublic))
 
