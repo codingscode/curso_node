@@ -1,7 +1,9 @@
+const caminho = require('path')
+
 const express = require('express')
 
-console.log('1:', __dirname)
-console.log('2:', __filename)
+console.log(__dirname)
+console.log(caminho.join(__dirname))
 
 const aplicacao = express()
 
