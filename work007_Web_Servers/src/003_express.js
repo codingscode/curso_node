@@ -3,9 +3,14 @@ const caminho = require('path')
 const express = require('express')
 
 console.log(__dirname)
-console.log(caminho.join(__dirname, '..'))
+console.log(caminho.join(__dirname, '../public'))
 
 const aplicacao = express()
+
+const caminhoDiretorioPublic = caminho.join(__dirname, '../public')
+
+aplicacao.use(express.static(caminhoDiretorioPublic))
+
 
 aplicacao.get('', (req, res) => {
     res.send('<h1>Clima</h1>')
