@@ -3,7 +3,7 @@ const caminho = require('path')
 const express = require('express')
 
 console.log(__dirname)
-console.log(caminho.join(__dirname))
+console.log(caminho.join(__dirname, '..'))
 
 const aplicacao = express()
 
