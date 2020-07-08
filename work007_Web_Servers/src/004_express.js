@@ -7,8 +7,12 @@ const aplicacao = express()
 
 const caminhoDiretorioPublic = caminho.join(__dirname, '../public/')
 
+aplicacao.set('view engine', 'hbs')
 aplicacao.use(express.static(caminhoDiretorioPublic))
 
+aplicacao.get('', (req, res) => {
+    res.render('index')
+})
 
 aplicacao.get('/clima', (req, res) => {
     res.send({
