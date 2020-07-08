@@ -2,3 +2,9 @@ h1 {
     color: orange;
     font-weight: bolder;
 }
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
