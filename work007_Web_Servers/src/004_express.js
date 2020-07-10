@@ -11,7 +11,10 @@ aplicacao.set('view engine', 'hbs')
 aplicacao.use(express.static(caminhoDiretorioPublic))
 
 aplicacao.get('', (req, res) => {
-    res.render('index')
+    res.render('index', {
+        titulo: 'Aplicação de Clima',
+        nome: 'Kyle Adams'
+    })
 })
 
 aplicacao.get('/clima', (req, res) => {
