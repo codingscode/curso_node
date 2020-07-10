@@ -18,7 +18,9 @@ aplicacao.get('', (req, res) => {
 })
 
 aplicacao.get('/sobre', (req, res) => {
-    res.render('sobre')
+    res.render('sobre', {
+        titulo: 'Sobre mim', nome: 'Kyle Adams'
+    })
 })
 
 aplicacao.get('/clima', (req, res) => {
