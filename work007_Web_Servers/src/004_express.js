@@ -17,6 +17,10 @@ aplicacao.get('', (req, res) => {
     })
 })
 
+aplicacao.get('/sobre', (req, res) => {
+    res.render('sobre')
+})
+
 aplicacao.get('/clima', (req, res) => {
     res.send({
         previsao: 'Sol', localizacao: 'Fortaleza'
@@ -34,5 +38,5 @@ aplicacao.listen(3000, () => {
 // nodemon src/004_express.js
 // localhost:3000
 // localhost:3000/ajuda.html
-// localhost:3000/sobre.html
+// localhost:3000/sobre
 // 
