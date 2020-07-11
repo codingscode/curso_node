@@ -48,3 +48,16 @@ aplicacao.listen(3000, () => {
 // localhost:3000/ajuda
 // localhost:3000/sobre
 // 
+
+// mudança do nome de 'views' para 'templates'
+
+
+
+
+
+
+
+
+
+
+
