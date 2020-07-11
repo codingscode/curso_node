@@ -10,6 +10,13 @@ https://nodejs.org/dist/latest-v14.x/docs/api/path.html
 https://www.npmjs.com/package/hbs
 no terminal da pasta:  npm i hbs
 
+https://expressjs.com/en/4x/api.html#app
+    https://expressjs.com/en/4x/api.html#app.set
+https://expressjs.com/en/4x/api.html#req
+https://expressjs.com/en/4x/api.html#res
+https://expressjs.com/en/4x/api.html#router
+
+
 
 
 

@@ -5,12 +5,16 @@ const express = require('express')
 
 const aplicacao = express()
 
+
+// define caminhos para configuracao Express
 const caminhoDiretorioPublic = caminho.join(__dirname, '../public/')
 const caminhoViews = caminho.join(__dirname, '../templates')
 
-
+// Setup handlebars engine and views location
 aplicacao.set('view engine', 'hbs')
 aplicacao.set('views', caminhoViews)
+
+// Setup static directory to serve
 aplicacao.use(express.static(caminhoDiretorioPublic))
 
 aplicacao.get('', (req, res) => {
