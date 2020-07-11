@@ -6,8 +6,11 @@ const express = require('express')
 const aplicacao = express()
 
 const caminhoDiretorioPublic = caminho.join(__dirname, '../public/')
+const caminhoViews = caminho.join(__dirname, '../templates')
+
 
 aplicacao.set('view engine', 'hbs')
+aplicacao.set('views', caminhoViews)
 aplicacao.use(express.static(caminhoDiretorioPublic))
 
 aplicacao.get('', (req, res) => {
