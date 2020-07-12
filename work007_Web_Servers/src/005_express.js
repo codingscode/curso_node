@@ -35,7 +35,9 @@ aplicacao.get('/sobre', (req, res) => {
 
 aplicacao.get('/ajuda', (req, res) => {
     res.render('ajuda', {
-        textoAjuda: 'Isto é algum texto útil.'
+        textoAjuda: 'Isto é algum texto útil.',
+        titulo: 'Ajuda',
+        nome: 'Kyle Adams'
     })
 })
 
