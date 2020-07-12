@@ -10,10 +10,12 @@ const aplicacao = express()
 // define caminhos para configuracao Express
 const caminhoDiretorioPublic = caminho.join(__dirname, '../public/')
 const caminhoViews = caminho.join(__dirname, '../templates/views')
+const caminhoPartials = caminho.join(__dirname, '../templates/partials')
 
 // Setup handlebars engine and views location
 aplicacao.set('view engine', 'hbs')
 aplicacao.set('views', caminhoViews)
+hbs.registerPartials(caminhoPartials)
 
 // Setup static directory to serve
 aplicacao.use(express.static(caminhoDiretorioPublic))
@@ -58,8 +60,8 @@ aplicacao.listen(3000, () => {
 // 
 
 // mudança do nome de 'views' para 'templates'
-
-
+// localhost:3000/ajuda   o 'nodemon src/005_express.js' precisa ser reiniciado nodemon n funciona muito bem com html       
+// nodemon src/005_express.js -e js,hbs  // roda sem problema
 
 
 
