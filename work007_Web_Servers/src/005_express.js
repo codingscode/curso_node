@@ -1,6 +1,7 @@
 const caminho = require('path')
 
 const express = require('express')
+const hbs = require('hbs')
 
 
 const aplicacao = express()
@@ -8,7 +9,7 @@ const aplicacao = express()
 
 // define caminhos para configuracao Express
 const caminhoDiretorioPublic = caminho.join(__dirname, '../public/')
-const caminhoViews = caminho.join(__dirname, '../templates')
+const caminhoViews = caminho.join(__dirname, '../templates/views')
 
 // Setup handlebars engine and views location
 aplicacao.set('view engine', 'hbs')
