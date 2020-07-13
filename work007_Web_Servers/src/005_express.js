@@ -47,6 +47,9 @@ aplicacao.get('/clima', (req, res) => {
     })
 })
 
+aplicacao.get('*', (req, res) => {
+    res.send('Minha 404 page')
+})
 
 aplicacao.listen(3000, () => {
     console.log('Servidor está funcionando na porta 3000')
@@ -65,6 +68,7 @@ aplicacao.listen(3000, () => {
 // localhost:3000/ajuda   o 'nodemon src/005_express.js' precisa ser reiniciado nodemon n funciona muito bem com html       
 // nodemon src/005_express.js -e js,hbs  // roda sem problema
 
+// localhost:3000/eu   ->  Cannot GET /eu
 
 
 
