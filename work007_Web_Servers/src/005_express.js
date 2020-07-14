@@ -47,7 +47,11 @@ aplicacao.get('/clima', (req, res) => {
     })
 })
 
-aplicacao.get('*', (req, res) => {
+aplicacao.get('/ajuda/*', (req, res) => {
+    res.send('Artigo Ajuda não encontrado')
+})
+
+aplicacao.get('*', (req, res) => {    // deve vir por último
     res.send('Minha 404 page')
 })
 
@@ -69,6 +73,7 @@ aplicacao.listen(3000, () => {
 // nodemon src/005_express.js -e js,hbs  // roda sem problema
 
 // localhost:3000/eu   ->  Cannot GET /eu
+// localhost:3000/ajuda/dado... ou (+)   ->  Minha 404 page
 
 
 
