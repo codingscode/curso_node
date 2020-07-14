@@ -1,10 +1,20 @@
-h1 {
-    color: orange;
-    font-weight: bolder;
+body {
+    color: rgb(39, 39, 39);
+    font-family: arial;
+    max-width: 650px;
+    border: 1px solid orange;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
-img {
-    width: 250px;
-    height: 250px;
+footer {
+    background: blue;
+    font-weight: bolder;
+    color: white;
+    padding: 16px;
+    margin: 16px;
 }
+
+
+
 
