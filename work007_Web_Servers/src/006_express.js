@@ -23,13 +23,13 @@ aplicacao.use(express.static(caminhoDiretorioPublic))
 aplicacao.get('', (req, res) => {
     res.render('index', {
         titulo: 'Aplicação de Clima',
-        nome: 'Kyle Adams'
+        nome: 'Kyle Fulanis'
     })
 })
 
 aplicacao.get('/sobre', (req, res) => {
     res.render('sobre', {
-        titulo: 'Sobre mim', nome: 'Kyle Adams'
+        titulo: 'Sobre mim', nome: 'Kyle Fulanis'
     })
 })
 
@@ -37,7 +37,7 @@ aplicacao.get('/ajuda', (req, res) => {
     res.render('ajuda', {
         textoAjuda: 'Isto é algum texto útil.',
         titulo: 'Ajuda',
-        nome: 'Kyle Adams'
+        nome: 'Kyle Fulanis'
     })
 })
 
