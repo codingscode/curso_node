@@ -48,11 +48,19 @@ aplicacao.get('/clima', (req, res) => {
 })
 
 aplicacao.get('/ajuda/*', (req, res) => {
-    res.send('Artigo Ajuda não encontrado')
+    res.render('404', {
+        titulo: '404',
+        nome: 'Kyle Fulanis',
+        mensagemErro: 'Artigo Ajuda não encontrado'
+    })
 })
 
 aplicacao.get('*', (req, res) => {    // deve vir por último
-    res.send('Minha 404 page')
+    res.render('404', {
+        titulo: '404',
+        nome: 'Kyle Fulanis',
+        mensagemErro: 'Página não encontrada'
+    })
 })
 
 aplicacao.listen(3000, () => {
@@ -74,8 +82,8 @@ aplicacao.listen(3000, () => {
 
 // localhost:3000/eu   ->  Cannot GET /eu
 // localhost:3000/ajuda/dado... ou (+)   ->  Minha 404 page
-
-
+// localhost:3000/eita
+// localhost:3000/ajuda/eita
 
 
 
