@@ -5,6 +5,8 @@ body {
     border: 1px solid orange;
     margin: 0 auto;
     padding: 0 16px;
+
+    display: flex;
 }
 
 footer {
@@ -21,7 +23,7 @@ header {
     margin-bottom: 48px;
 }
 
-img {
+.retrato {
     width: 250px;
     height: 250px;
 }
@@ -29,6 +31,7 @@ img {
 h1 {
     font-size: 64px;
     margin-bottom: 16px;
+    color: cadetblue;
 }
 
 header a {
@@ -42,4 +45,16 @@ header a:hover {
     color: blue;
     
 }
+
+.conteudo-principal {
+
+}
+
+
+
+
+
+
+
+
 
