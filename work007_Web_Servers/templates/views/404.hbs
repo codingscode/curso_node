@@ -5,13 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
 
-        <link rel="stylesheet" href="../../public/css/estilos.css">
+        <link rel="stylesheet" href="./css/estilos.css">
         
     </head>
 
     <body>
-         {{>cabecalho}}
-         {{mensagemErro}}
+
+         <div class="conteudo-principal">
+             {{>cabecalho}}
+             <p>{{mensagemErro}}</p>
+         </div>
+         
          {{>rodape}}
     </body>
 </html>
