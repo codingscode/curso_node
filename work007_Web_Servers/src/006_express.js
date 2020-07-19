@@ -48,6 +48,12 @@ aplicacao.get('/clima', (req, res) => {
 })
 
 aplicacao.get('/produtos', (req, res) => {
+    if (!req.query.search) {
+        res.send({
+           erro: 'você deve fornecer um termo de pesquisa'
+        })
+    }
+
     console.log(req.query.search)  // jogos
     res.send({
         produtos: []
@@ -93,6 +99,7 @@ aplicacao.listen(3000, () => {
 // localhost:3000/produtos?search=jogos   -> {"produtos":[]} , { search: 'jogos'}
 // localhost:3000/produtos?search=jogos&rating=5  -> {"produtos":[]},  { search: 'jogos', rating: '5' }
 // localhost:3000/produtos?search=jogos&rating=5  -> jogos
+// localhost:3000/produtos  -> no browser {"erro":"você deve fornecer um termo de pesquisa"}
 
 
 
