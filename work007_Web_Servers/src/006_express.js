@@ -48,7 +48,7 @@ aplicacao.get('/clima', (req, res) => {
 })
 
 aplicacao.get('/produtos', (req, res) => {
-    console.log(req.query)
+    console.log(req.query.search)  // jogos
     res.send({
         produtos: []
     })
@@ -92,6 +92,7 @@ aplicacao.listen(3000, () => {
 // localhost:3000/produtos
 // localhost:3000/produtos?search=jogos   -> {"produtos":[]} , { search: 'jogos'}
 // localhost:3000/produtos?search=jogos&rating=5  -> {"produtos":[]},  { search: 'jogos', rating: '5' }
+// localhost:3000/produtos?search=jogos&rating=5  -> jogos
 
 
 
