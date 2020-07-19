@@ -42,6 +42,12 @@ aplicacao.get('/ajuda', (req, res) => {
 })
 
 aplicacao.get('/clima', (req, res) => {
+    if (!req.query.endereco) {
+        return res.send({
+           erro: 'Você deve fornecer um endereço'
+        })
+    }
+
     res.send({
         previsao: 'Sol', localizacao: 'Fortaleza'
     })
@@ -84,11 +90,6 @@ aplicacao.listen(3000, () => {
 
 
 // nodemon src/006_express.js -e js,hbs
-// localhost:3000
-// localhost:3000/ajuda
-// localhost:3000/sobre
-// 
-
 // nodemon src/006_express.js -e js,hbs  // roda sem problema
 
 // localhost:3000/eu   ->  Cannot GET /eu
@@ -102,5 +103,8 @@ aplicacao.listen(3000, () => {
 
 // obs: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client, evita-se o erro com return
 // localhost:3000/produtos?search=jogos&rating=5  -> jogos
+// localhost:3000/clima -> no browser: {"previsao":"Sol","localizacao":"Fortaleza"}
+// localhost:3000/clima -> depois no browser: {"erro":"Você deve fornecer um endereço"}
+// localhost:3000/clima?endereco=fortaleza -> depois no browser: {"previsao":"Sol","localizacao":"Fortaleza"}
 
 
