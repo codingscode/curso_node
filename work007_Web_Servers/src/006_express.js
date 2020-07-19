@@ -47,6 +47,12 @@ aplicacao.get('/clima', (req, res) => {
     })
 })
 
+aplicacao.get('/produtos', (req, res) => {
+    res.send({
+        produtos: []
+    })
+})
+
 aplicacao.get('/ajuda/*', (req, res) => {
     res.render('404', {
         titulo: '404',
@@ -76,14 +82,13 @@ aplicacao.listen(3000, () => {
 // localhost:3000/sobre
 // 
 
-// mudança do nome de 'views' para 'templates'
-// localhost:3000/ajuda   o 'nodemon src/006_express.js' precisa ser reiniciado nodemon n funciona muito bem com html       
 // nodemon src/006_express.js -e js,hbs  // roda sem problema
 
 // localhost:3000/eu   ->  Cannot GET /eu
 // localhost:3000/ajuda/dado... ou (+)   ->  Minha 404 page
 // localhost:3000/eita
 // localhost:3000/ajuda/eita
+// localhost:3000/produtos
 
 
 
