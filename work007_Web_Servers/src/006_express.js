@@ -49,7 +49,7 @@ aplicacao.get('/clima', (req, res) => {
     }
 
     res.send({
-        previsao: 'Sol', localizacao: 'Fortaleza'
+        previsao: 'Sol', localizacao: 'Fortaleza', endereco: req.query.endereco
     })
 })
 
@@ -106,5 +106,7 @@ aplicacao.listen(3000, () => {
 // localhost:3000/clima -> no browser: {"previsao":"Sol","localizacao":"Fortaleza"}
 // localhost:3000/clima -> depois no browser: {"erro":"Você deve fornecer um endereço"}
 // localhost:3000/clima?endereco=fortaleza -> depois no browser: {"previsao":"Sol","localizacao":"Fortaleza"}
+// localhost:3000/clima?endereco=fortaleza -> browser: {"previsao":"Sol","localizacao":"Fortaleza","endereco":"fortaleza"}
+// localhost:3000/clima?endereco=blumenau -> browser: {"previsao":"Sol","localizacao":"Fortaleza","endereco":"blumenau"}
 
 
