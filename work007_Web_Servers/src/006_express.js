@@ -2,7 +2,8 @@ const caminho = require('path')
 
 const express = require('express')
 const hbs = require('hbs')
-
+const geocode = require('./006_paralelo/006_geocode')
+const previsao = require('./006_paralelo/006_previsao')
 
 const aplicacao = express()
 
@@ -48,9 +49,28 @@ aplicacao.get('/clima', (req, res) => {
         })
     }
 
-    res.send({
+    geocode(req.query.endereco, (erro, {latitude, longitude, localizacao}) => {
+        if (erro) {
+           return res.send({erro: erro}) // ou só {erro}
+        }
+    
+        previsao(latitude, longitude, (erro, dadoPrevisao) => {
+           if (erro) {
+              return res.send({erro: erro})  // ou só {erro}
+           }
+    
+           res.send({
+              previsao: dadoPrevisao,
+              localizacao, //localizacao: localizacao
+              endereco: req.query.endereco
+           })
+        })
+     })
+
+
+    /* res.send({
         previsao: 'Sol', localizacao: 'Fortaleza', endereco: req.query.endereco
-    })
+    }) */
 })
 
 aplicacao.get('/produtos', (req, res) => {
@@ -108,5 +128,7 @@ aplicacao.listen(3000, () => {
 // localhost:3000/clima?endereco=fortaleza -> depois no browser: {"previsao":"Sol","localizacao":"Fortaleza"}
 // localhost:3000/clima?endereco=fortaleza -> browser: {"previsao":"Sol","localizacao":"Fortaleza","endereco":"fortaleza"}
 // localhost:3000/clima?endereco=blumenau -> browser: {"previsao":"Sol","localizacao":"Fortaleza","endereco":"blumenau"}
+// localhost:3000/clima?endereco=boston   -->  {"previsao":"Isto é atualmente: 27 graus. Há uma probabilidade de precipitação de 0 %","localizacao":"Boston, Massachusetts, United States","endereco":"boston"}
+// localhost:3000/clima?endereco=newyork
 
 
