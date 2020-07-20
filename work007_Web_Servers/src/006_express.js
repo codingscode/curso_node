@@ -130,5 +130,5 @@ aplicacao.listen(3000, () => {
 // localhost:3000/clima?endereco=blumenau -> browser: {"previsao":"Sol","localizacao":"Fortaleza","endereco":"blumenau"}
 // localhost:3000/clima?endereco=boston   -->  {"previsao":"Isto é atualmente: 27 graus. Há uma probabilidade de precipitação de 0 %","localizacao":"Boston, Massachusetts, United States","endereco":"boston"}
 // localhost:3000/clima?endereco=newyork
-
+// localhost:3000/clima?endereco=!
 
