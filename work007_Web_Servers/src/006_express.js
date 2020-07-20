@@ -49,7 +49,7 @@ aplicacao.get('/clima', (req, res) => {
         })
     }
 
-    geocode(req.query.endereco, (erro, {latitude, longitude, localizacao}) => {
+    geocode(req.query.endereco, (erro, {latitude, longitude, localizacao} = {}) => {
         if (erro) {
            return res.send({erro: erro}) // ou só {erro}
         }
@@ -130,5 +130,5 @@ aplicacao.listen(3000, () => {
 // localhost:3000/clima?endereco=blumenau -> browser: {"previsao":"Sol","localizacao":"Fortaleza","endereco":"blumenau"}
 // localhost:3000/clima?endereco=boston   -->  {"previsao":"Isto é atualmente: 27 graus. Há uma probabilidade de precipitação de 0 %","localizacao":"Boston, Massachusetts, United States","endereco":"boston"}
 // localhost:3000/clima?endereco=newyork
-// localhost:3000/clima?endereco=!
+// localhost:3000/clima?endereco=!           --> Cannot destructure property 'latitude' of 'undefined' as it is undefined.
 
