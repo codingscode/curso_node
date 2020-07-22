@@ -132,3 +132,4 @@ aplicacao.listen(3000, () => {
 // localhost:3000/clima?endereco=newyork
 // localhost:3000/clima?endereco=!           --> Cannot destructure property 'latitude' of 'undefined' as it is undefined.
 
+// observar console
