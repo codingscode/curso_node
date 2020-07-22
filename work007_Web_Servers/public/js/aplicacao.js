@@ -7,7 +7,7 @@ fetch('http://puzzle.mead.io/puzzle').then((resposta) => {
     })
 })
 
-fetch('http://localhost:3000/clima?endereco=boston').then((resposta) => {
+fetch('http://localhost:3000/clima?endereco=!').then((resposta) => {
     resposta.json().then((dado) => {
         if (dado.erro) {
            console.log(dado.erro)
