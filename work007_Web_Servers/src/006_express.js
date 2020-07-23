@@ -133,4 +133,4 @@ aplicacao.listen(3000, () => {
 // localhost:3000/clima?endereco=!           --> Cannot destructure property 'latitude' of 'undefined' as it is undefined.
 
 // observar console
-// observar console com localhost:3000/
+// observar console com localhost:3000/ ; clicando em 'pesquisar', o texto aparece rápido
