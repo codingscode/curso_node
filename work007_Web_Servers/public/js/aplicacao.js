@@ -21,11 +21,14 @@ fetch('http://puzzle.mead.io/puzzle').then((resposta) => {
 
 
 const formularioClima = document.querySelector('form')
+const pesquisa = document.querySelector('input')
 
 formularioClima.addEventListener('submit', (evento) => {
      evento.preventDefault()
 
-     console.log('Testando!')
+     const local = pesquisa.value // valor da entrada
+
+     console.log(local)
 })
 
 
