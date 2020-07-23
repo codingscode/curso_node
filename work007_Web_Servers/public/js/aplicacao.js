@@ -7,7 +7,7 @@ fetch('http://puzzle.mead.io/puzzle').then((resposta) => {
     })
 })
 
-fetch('http://localhost:3000/clima?endereco=!').then((resposta) => {
+/* fetch('http://localhost:3000/clima?endereco=!').then((resposta) => {
     resposta.json().then((dado) => {
         if (dado.erro) {
            console.log(dado.erro)
@@ -17,7 +17,23 @@ fetch('http://localhost:3000/clima?endereco=!').then((resposta) => {
            console.log(dado.previsao)
         }
     })
+}) */
+
+
+const formularioClima = document.querySelector('form')
+formularioClima.addEventListener('submit', () => {
+     console.log('Testando!')
 })
+
+
+
+
+
+
+
+
+
+
 
 
 
