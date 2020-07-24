@@ -135,3 +135,4 @@ aplicacao.listen(3000, () => {
 // observar console
 // observar console com localhost:3000/ ; clicando em 'pesquisar', o texto aparece rápido
 // observar console com localhost:3000/ ; pesquisar vazio e não vazio etc
+// pesquisar: !, boston
