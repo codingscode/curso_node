@@ -8,10 +8,12 @@ fetch('http://puzzle.mead.io/puzzle').then((resposta) => {
 })
 
 
-
-
 const formularioClima = document.querySelector('form')
 const pesquisa = document.querySelector('input')
+
+const mensagem_1 = document.querySelector('#mensagem-1')
+mensagem_1.textContent = 'De JavaScript'
+
 
 formularioClima.addEventListener('submit', (evento) => {
      evento.preventDefault()
