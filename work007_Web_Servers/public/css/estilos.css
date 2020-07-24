@@ -52,7 +52,18 @@ header a:hover {
     flex-grow: 1;
 }
 
-
+input {
+    border: 2px solid #cccccc;
+    padding: 8px;
+}
+ 
+button {
+    cursor: pointer;
+    border: 1px solid #645b5b;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
 
 
 
