@@ -7,17 +7,7 @@ fetch('http://puzzle.mead.io/puzzle').then((resposta) => {
     })
 })
 
-/* fetch('http://localhost:3000/clima?endereco=!').then((resposta) => {
-    resposta.json().then((dado) => {
-        if (dado.erro) {
-           console.log(dado.erro)
-        }
-        else {
-           console.log(dado.localizacao)
-           console.log(dado.previsao)
-        }
-    })
-}) */
+
 
 
 const formularioClima = document.querySelector('form')
@@ -26,9 +16,19 @@ const pesquisa = document.querySelector('input')
 formularioClima.addEventListener('submit', (evento) => {
      evento.preventDefault()
 
-     const local = pesquisa.value // valor da entrada
+     const local = pesquisa.value 
 
-     console.log(local)
+     fetch(`http://localhost:3000/clima?endereco=${local}`).then((resposta) => {
+            resposta.json().then((dado) => {
+                if (dado.erro) {
+                    console.log(dado.erro)
+                }
+                else {
+                    console.log(dado.localizacao)
+                    console.log(dado.previsao)
+                }
+            })
+     })
 })
 
 
