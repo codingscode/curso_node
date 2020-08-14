@@ -19,5 +19,27 @@ https://expressjs.com/en/4x/api.html#router
 
 puzzle.mead.io/puzzle
 
+https://github.com
+https://github.com/expressjs/express
+
+
+https://www.heroku.com/
+https://devcenter.heroku.com/articles/heroku-cli
+do windows:
+no terminal: npm install -g heroku
+       heroku -v
+       heroku login
+
+
+https://git-scm.com/
+   no terminal: git --version
+
+
+terminal da pasta: git init -> git status -> git add . -> git commit -m "inicio"
+                   
+npm start,    // ver localhost:3000
+
+
+
 
 
