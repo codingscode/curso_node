@@ -85,5 +85,9 @@ digitar nodemon src/006_express.js -e js,hbs;         porta:3000
 
 digitar : npm run dev
 
+localmente instalar nodemon: npm i nodemon --save-dev
+devDependencies não estão instaladas no node_modules, mas globalmente na máquina do usuário
+
+
 
 
