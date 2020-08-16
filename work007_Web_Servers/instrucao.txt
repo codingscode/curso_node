@@ -41,6 +41,7 @@ npm start,    // ver localhost:3000
 
 digitar nodemon src/006_express.js -e js,hbs;         porta:3000
 
+------------------------------
 {
   request: {
     type: 'LatLon',
@@ -80,4 +81,9 @@ digitar nodemon src/006_express.js -e js,hbs;         porta:3000
     is_day: 'yes'
   }
 }
+------------------------------
+
+digitar : npm run dev
+
+
 

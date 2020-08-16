@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/006_express.js"
+    "start": "node src/006_express.js",
+    "dev":"nodemon src/006_express.js -e js,hbs"
   },
   "author": "",
   "license": "ISC",
