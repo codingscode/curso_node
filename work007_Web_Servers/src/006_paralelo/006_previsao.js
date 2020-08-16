@@ -12,6 +12,7 @@ const prever = (latitude, longitude, funcao) => {
            funcao('Não é possíve encontrar localização', undefined)
        }
        else {
+           console.log('body aqui', body)
            funcao(undefined, `Isto é atualmente: ${body.current.temperature} graus. Há uma probabilidade de precipitação de ${body.current.precip} %`)
        }
     })

@@ -39,7 +39,45 @@ terminal da pasta: git init -> git status -> git add . -> git commit -m "inicio"
                    
 npm start,    // ver localhost:3000
 
+digitar nodemon src/006_express.js -e js,hbs;         porta:3000
 
-
-
+{
+  request: {
+    type: 'LatLon',
+    query: 'Lat 42.36 and Lon -71.06',
+    language: 'en',
+    unit: 'm'
+  },
+  location: {
+    name: 'Quincy',
+    country: 'United States of America',
+    region: 'Massachusetts',
+    lat: '42.253',
+    lon: '-71.003',
+    timezone_id: 'America/New_York',
+    localtime: '2020-08-16 19:33',
+    localtime_epoch: 1597606380,
+    utc_offset: '-4.0'
+  },
+  current: {
+    observation_time: '11:33 PM',
+    temperature: 17,
+    weather_code: 113,
+    weather_icons: [
+      'https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png'
+    ],
+    weather_descriptions: [ 'Sunny' ],
+    wind_speed: 19,
+    wind_degree: 60,
+    wind_dir: 'ENE',
+    pressure: 1015,
+    precip: 1,
+    humidity: 100,
+    cloudcover: 0,
+    feelslike: 17,
+    uv_index: 4,
+    visibility: 7,
+    is_day: 'yes'
+  }
+}
 
