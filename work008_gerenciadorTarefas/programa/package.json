@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/006_express.js",
-    "dev":"nodemon src/006_express.js -e js,hbs"
+    "dev": "nodemon src/006_express.js -e js,hbs"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "heroku": "^7.42.5",
+    "mongodb": "^3.6.0",
     "request": "^2.88.2",
     "validator": "^13.0.0",
     "yargs": "^15.3.1"

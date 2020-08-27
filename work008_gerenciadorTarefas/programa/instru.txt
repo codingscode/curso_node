@@ -13,7 +13,9 @@ https://www.mongodb.com/
         versao 3.6 Driver
             http://mongodb.github.io/node-mongodb-native/3.6/
             http://mongodb.github.io/node-mongodb-native/3.6/api/
-        
 
+https://www.npmjs.com/package/mongodb
+        
+digitar no terminal da pasta: npm i mongodb
 
 
