@@ -1,0 +1,19 @@
+digitar no cmd windows: mongod    -> porta 27017
+
+digitar no google: robo 3t -> escolher robo 3t
+       robo 3t precisa está junto com o comando mongod no cmd
+
+clicar com o botao direito sobre o nome do banco de dados e clica 'open shell'
+            digitar: db.version()  e clicar no botão play
+
+https://www.mongodb.com/
+        https://docs.mongodb.com/drivers/
+        https://docs.mongodb.com/drivers/node/
+        http://mongodb.github.io/node-mongodb-native/?jmp=docs
+        versao 3.6 Driver
+            http://mongodb.github.io/node-mongodb-native/3.6/
+            http://mongodb.github.io/node-mongodb-native/3.6/api/
+        
+
+
+
