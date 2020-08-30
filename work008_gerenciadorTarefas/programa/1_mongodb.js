@@ -12,9 +12,13 @@ clienteMongo.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
     }
 
     console.log('Conectado corretamente!')
+    const bancodados = cliente.db(nomeBancoDados)
+
+    bancodados.collection('usuarios').insertOne({
+        nome: 'Fulanis', idade: 28
+    })
+    
 })
-
-
 
 
 

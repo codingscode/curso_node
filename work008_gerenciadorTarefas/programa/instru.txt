@@ -19,6 +19,13 @@ https://www.npmjs.com/package/mongodb
 digitar no terminal da pasta: npm i mongodb
 
 
-digitar no terminal da pasta: node 1_mongodb.js
+digitar no terminal da pasta: node 1_mongodb.js; idem
+
+ver o programa robo 3t e dar refresh e ver banco de dados 'gerenciador-tarefa' criado
+
+gerenciador-tarefa -> Collections -> usuarios (clicar view documents)
+
+
+
 
 
