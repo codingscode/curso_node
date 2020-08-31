@@ -21,6 +21,7 @@ clienteMongo.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
            return console.log('Não foi possível inserir usuário')
         }
      
+        console.log(resultado)
         console.log(resultado.ops)
      })
     
