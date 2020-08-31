@@ -25,7 +25,9 @@ ver o programa robo 3t e dar refresh e ver banco de dados 'gerenciador-tarefa' c
 
 gerenciador-tarefa -> Collections -> usuarios (clicar view documents)
 
-
+no terminal -> node 1_mongodb.js :
+      Conectado corretamente!
+      [ { nome: 'Fulanis', idade: 28, _id: 5f4c41be203fec4de0f9451c } ]
 
 
 

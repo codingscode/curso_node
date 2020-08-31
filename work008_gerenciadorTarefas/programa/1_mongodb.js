@@ -16,7 +16,13 @@ clienteMongo.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
 
     bancodados.collection('usuarios').insertOne({
         nome: 'Fulanis', idade: 28
-    })
+    }, (erro, resultado) => {
+        if (erro) {
+           return console.log('Não foi possível inserir usuário')
+        }
+     
+        console.log(resultado.ops)
+     })
     
 })
 
