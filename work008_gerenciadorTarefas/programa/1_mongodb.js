@@ -24,7 +24,7 @@ clienteMongo.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
         console.log(resultado.ops)
      }) */
 
-     bancodados.collection('usuarios').insertMany([
+     /* bancodados.collection('usuarios').insertMany([
             { nome: 'Chan', idade: 21},
             { nome: 'Tom', idade: 30}
         ], (erro, resultado) => {
@@ -34,7 +34,19 @@ clienteMongo.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
           
              console.log(resultado.ops)
           }
-        )
+     ) */
+
+     bancodados.collection('tarefas').insertMany([
+         {descricao: 'Codar em javascript', completo: true},
+         {descricao: 'Ir ao mercado', completo: false},
+         {descricao: 'Caminhada', completo: false}
+     ], (erro, resultado) => {
+        if (erro) {
+           return console.log('Não foi possível inserir usuário')
+        }
+     
+        console.log(resultado.ops)
+     })
     
 })
 
