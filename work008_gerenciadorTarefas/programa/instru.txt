@@ -196,11 +196,53 @@ CommandResult {
 [ { nome: 'Fulanis', idade: 28, _id: 5f4c42554e0ba254e4ac0992 } ]
 ----------------
 
+http://mongodb.github.io/node-mongodb-native/3.6/api/
+       http://mongodb.github.io/node-mongodb-native/3.6/api/MongoClient.html
+              http://mongodb.github.io/node-mongodb-native/3.6/api/MongoClient.html#.connect
+       http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html
+              http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#insertOne
+                     http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#~writeOpCallback
+                            -> writeOpCallback
+                            -> insertOneWriteOpResult
+                            -----------------------------
+                            insertOneWriteOpResult Object
+                            Properties:
+                            Name	Type	Description
+                            insertedCount	number	
+                            The total amount of documents inserted.
+
+                            ops	Array.<object>	
+                            All the documents inserted using insertOne/insertMany/replaceOne. Documents contain the _id field if forceServerObjectId == false for insertOne/insertMany
+
+                            insertedId	ObjectId	
+                            The driver generated ObjectId for the insert operation.
+
+                            connection	object	
+                            The connection object used for the operation.
+
+                            result	object	
+                            The raw command result object returned from MongoDB (content might vary by server version).
+
+                            Properties
+                            Name	Type	Description
+                            ok	number	
+                            Is 1 if the command executed correctly.
+
+                            n	number	
+                            The total count of documents inserted.
+                            -----------------------------
 
 
+http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#insertMany
 
-
-
+digitar terminal: node 1_mongodb.js
+       -----------------
+       [
+              { nome: 'Chan', idade: 21, _id: 5f4c47fed0886d5ab013c7e8 },
+              { nome: 'Tom', idade: 30, _id: 5f4c47fed0886d5ab013c7e9 }  
+       ]
+       -----------------
+   refresh robo 3t
 
 
 
