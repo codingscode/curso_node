@@ -1,12 +1,20 @@
 // CRUD create read update delete
 
-const mongodb = require('mongodb')
+/* const mongodb = require('mongodb')
 const clienteMongo = mongodb.MongoClient
+const ObjectID = mongodb.ObjectID */
+
+const { MongoClient, ObjectID } = require('mongodb')
+
+
 
 const conexaoURL = 'mongodb://127.0.0.1:27017'
 const nomeBancoDados = 'gerenciador-tarefa'
 
-clienteMongo.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
+const id = new ObjectID()
+console.log('o id é ', id)
+
+MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
     if (erro) {
        return console.log('Não foi possível conectar ao banco de dados!')
     }
@@ -36,7 +44,7 @@ clienteMongo.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
           }
      ) */
 
-     bancodados.collection('tarefas').insertMany([
+     /* bancodados.collection('tarefas').insertMany([
          {descricao: 'Codar em javascript', completo: true},
          {descricao: 'Ir ao mercado', completo: false},
          {descricao: 'Caminhada', completo: false}
@@ -46,7 +54,9 @@ clienteMongo.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
         }
      
         console.log(resultado.ops)
-     })
+     }) */
+
+
     
 })
 
