@@ -12,7 +12,9 @@ const conexaoURL = 'mongodb://127.0.0.1:27017'
 const nomeBancoDados = 'gerenciador-tarefa'
 
 const id = new ObjectID()
-console.log('o id é ', id)
+console.log(id)
+console.log('-->',id.getTimestamp())
+
 
 MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
     if (erro) {

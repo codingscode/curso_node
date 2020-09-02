@@ -259,5 +259,24 @@ digitar terminal: node 1_mongodb.js
          o id é 5f4f0a314614ef2a3c2c507c
 
 
+https://docs.mongodb.com/manual/reference/method/ObjectId/
+http://mongodb.github.io/node-mongodb-native/3.6/api/ObjectID.html
+        getTimestamp()
+
+
+digitar terminal: node 1_mongodb.js
+      2020-09-02T03:05:35.000Z
+
+
+
+
+
+
+
+
+
+
+
+
 
 
