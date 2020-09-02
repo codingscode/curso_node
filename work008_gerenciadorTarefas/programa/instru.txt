@@ -268,9 +268,12 @@ digitar terminal: node 1_mongodb.js
       2020-09-02T03:05:35.000Z
 
 
+digitar terminal: node 1_mongodb.js
+  --> 2020-09-02T03:17:56.000Z
+  Conectado corretamente!
+  [ { _id: 5f4f0ee4704db659dc1c4162, nome: 'Michael', idade: 16 } ]
 
-
-
+ver robo 3t
 
 
 

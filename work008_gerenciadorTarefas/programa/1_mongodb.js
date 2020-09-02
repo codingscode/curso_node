@@ -24,15 +24,15 @@ MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
     console.log('Conectado corretamente!')
     const bancodados = cliente.db(nomeBancoDados)
 
-    /* bancodados.collection('usuarios').insertOne({
-        nome: 'Fulanis', idade: 28
+    bancodados.collection('usuarios').insertOne({
+        _id: id, nome: 'Michael', idade: 16
     }, (erro, resultado) => {
         if (erro) {
            return console.log('Não foi possível inserir usuário')
         }
      
         console.log(resultado.ops)
-     }) */
+     })
 
      /* bancodados.collection('usuarios').insertMany([
             { nome: 'Chan', idade: 21},
