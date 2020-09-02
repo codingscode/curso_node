@@ -12,8 +12,10 @@ const conexaoURL = 'mongodb://127.0.0.1:27017'
 const nomeBancoDados = 'gerenciador-tarefa'
 
 const id = new ObjectID()
-console.log(id)
-console.log('-->',id.getTimestamp())
+console.log(id.id)
+console.log(id.id.length)
+console.log(id.toHexString())
+console.log(id.toHexString().length)
 
 
 MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
@@ -24,15 +26,15 @@ MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
     console.log('Conectado corretamente!')
     const bancodados = cliente.db(nomeBancoDados)
 
-    bancodados.collection('usuarios').insertOne({
-        _id: id, nome: 'Michael', idade: 16
+    /* bancodados.collection('usuarios').insertOne({
+        nome: 'Michael', idade: 16
     }, (erro, resultado) => {
         if (erro) {
            return console.log('Não foi possível inserir usuário')
         }
      
         console.log(resultado.ops)
-     })
+     }) */
 
      /* bancodados.collection('usuarios').insertMany([
             { nome: 'Chan', idade: 21},

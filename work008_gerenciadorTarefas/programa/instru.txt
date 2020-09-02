@@ -276,6 +276,19 @@ digitar terminal: node 1_mongodb.js
 ver robo 3t
 
 
+digitar terminal: node 1_mongodb.js
+    <Buffer 5f 4f 11 0f 1e 22 41 20 c8 aa f9 94>
+    12
+    5f4f110f1e224120c8aaf994
+    24
+
+
+
+
+
+
+
+
 
 
 
