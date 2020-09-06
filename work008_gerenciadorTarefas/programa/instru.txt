@@ -306,5 +306,8 @@ no terminal: node 1_mongodb.js
     null
 
 
-
+agora funciona
+no terminal: node 1_mongodb.js
+    Conectado corretamente!
+    { _id: 5f4f0ee4704db659dc1c4162, nome: 'Michael', idade: 16 }
 
