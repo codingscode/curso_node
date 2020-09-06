@@ -299,9 +299,11 @@ no terminal: node 1_mongodb.js
     null
 
 
+copiando um id do banco de dados
 
-
-
+no terminal: node 1_mongodb.js
+    Conectado corretamente!
+    null
 
 
 

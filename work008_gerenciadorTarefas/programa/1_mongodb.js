@@ -26,7 +26,7 @@ MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
     console.log('Conectado corretamente!')
     const bancodados = cliente.db(nomeBancoDados)
 
-    bancodados.collection('usuarios').findOne({nome: 'Chan', idade: 1}, (erro, usuario) => {
+    bancodados.collection('usuarios').findOne({_id: '5f4f0ee4704db659dc1c4162'}, (erro, usuario) => {
          if (erro) {
             return console.log('Não foi possível encontrar')
          }
