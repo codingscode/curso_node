@@ -283,7 +283,15 @@ digitar terminal: node 1_mongodb.js
     24
 
 
+http://mongodb.github.io/node-mongodb-native/3.6/api/
+    http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html
+        http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#find
+        http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#findOne
 
+
+no terminal: node 1_mongodb.js
+    Conectado corretamente!
+    { _id: 5f4c47fed0886d5ab013c7e8, nome: 'Chan', idade: 21 }
 
 
 
