@@ -46,6 +46,9 @@ MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
         console.log(tarefa)
     })
     
+    bancodados.collection('tarefas').find({completo: false}).toArray((erro, tarefas) => {
+        console.log(tarefas)
+    })
 
 })
 

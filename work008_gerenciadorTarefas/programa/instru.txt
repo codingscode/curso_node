@@ -345,9 +345,17 @@ no terminal: node 1_mongodb.js :
     }
 
 
-
-
-
+no terminal: node 1_mongodb.js :
+    Conectado corretamente!
+    {
+      _id: 5f4c4e0428fd8a3174c473ec,
+      descricao: 'Ir ao mercado',   
+      completo: false
+    }
+    [
+      { _id: 5f4c4e0428fd8a3174c473ec, descricao: 'Ir ao mercado', completo: false },
+      { _id: 5f4c4e0428fd8a3174c473ed, descricao: 'Caminhada', completo: false }
+    ]
 
 
 
