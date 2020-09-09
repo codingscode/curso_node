@@ -328,7 +328,13 @@ no terminal: node 1_mongodb.js:
     ]
 
 
-
+Conectado corretamente!
+{ _id: 5f4f0ee4704db659dc1c4162, nome: 'Michael', idade: 16 }
+[
+  { _id: 5f4c47fed0886d5ab013c7e8, nome: 'Chan', idade: 21 },
+  { _id: 5f54556dcfa65b42800d9713, nome: 'Chan', idade: 21 } 
+]
+2
 
 
 

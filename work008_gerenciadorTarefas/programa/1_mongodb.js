@@ -34,10 +34,17 @@ MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
          console.log(usuario)
     })
 
+        
     bancodados.collection('usuarios').find({idade: 21}).toArray((erro, usuarios) => {
         console.log(usuarios)
     })
     
+        
+    bancodados.collection('usuarios').find({idade: 21}).count((erro, contar) => {
+        console.log(contar)
+    })
+    
+
 })
 
 
