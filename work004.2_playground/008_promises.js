@@ -4,7 +4,7 @@ const trabalharPromise = new Promise((resolver, rejeitar) => {
     setTimeout(() => {
         //resolver([4, 5, 6])
         rejeitar('Coisas deram errado!')
-        resolver([10, 11, 12])
+        rejeitar('Novo erro !')
     }, 2000)
 })
 
