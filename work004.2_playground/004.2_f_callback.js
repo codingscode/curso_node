@@ -2,7 +2,8 @@
 
 const trabalharCallBack = (func_param) => {
     setTimeout(() => {
-        func_param('Isto é meu erro!', undefined)
+        //func_param('Isto é meu erro!', undefined)
+        func_param(undefined, [1, 2, 3])
     }, 1000)
 }
 
