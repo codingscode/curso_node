@@ -1,0 +1,345 @@
+digitar no cmd windows: mongod    -> porta 27017
+
+digitar no google: robo 3t -> escolher robo 3t
+       robo 3t precisa está junto com o comando mongod no cmd
+
+clicar com o botao direito sobre o nome do banco de dados e clica 'open shell'
+            digitar: db.version()  e clicar no botão play
+
+https://www.mongodb.com/
+        https://docs.mongodb.com/drivers/
+        https://docs.mongodb.com/drivers/node/
+        http://mongodb.github.io/node-mongodb-native/?jmp=docs
+        versao 3.6 Driver
+            http://mongodb.github.io/node-mongodb-native/3.6/
+            http://mongodb.github.io/node-mongodb-native/3.6/api/
+
+https://www.npmjs.com/package/mongodb
+        
+digitar no terminal da pasta: npm i mongodb
+
+
+digitar no terminal da pasta: node 1_mongodb.js; idem
+
+ver o programa robo 3t e dar refresh e ver banco de dados 'gerenciador-tarefa' criado
+
+gerenciador-tarefa -> Collections -> usuarios (clicar view documents)
+
+no terminal -> node 1_mongodb.js :
+      Conectado corretamente!
+      [ { nome: 'Fulanis', idade: 28, _id: 5f4c41be203fec4de0f9451c } ]
+
+----------------
+Conectado corretamente!
+CommandResult {
+  result: { n: 1, ok: 1 },
+  connection: Connection {
+    _events: [Object: null prototype] {
+      error: [Function (anonymous)],
+      close: [Function (anonymous)],
+      timeout: [Function (anonymous)],
+      parseError: [Function (anonymous)],
+      message: [Function (anonymous)]
+    },
+    _eventsCount: 5,
+    _maxListeners: undefined,
+    id: 0,
+    options: {
+      host: '127.0.0.1',
+      port: 27017,
+      size: 5,
+      minSize: 0,
+      connectionTimeout: 10000,
+      socketTimeout: 360000,
+      keepAlive: true,
+      keepAliveInitialDelay: 120000,
+      noDelay: true,
+      ssl: false,
+      checkServerIdentity: true,
+      ca: null,
+      crl: null,
+      cert: null,
+      key: null,
+      passphrase: null,
+      rejectUnauthorized: true,
+      promoteLongs: true,
+      promoteValues: true,
+      promoteBuffers: false,
+      reconnect: true,
+      reconnectInterval: 1000,
+      reconnectTries: 30,
+      domainsEnabled: false,
+      legacyCompatMode: true,
+      metadata: [Object],
+      disconnectHandler: [Store],
+      cursorFactory: [Function: Cursor],
+      emitError: true,
+      monitorCommands: false,
+      promiseLibrary: [Function: Promise],
+      servers: [Array],
+      caseTranslate: true,
+      useNewUrlParser: true,
+      directConnection: true,
+      sslValidate: true,
+      dbName: 'test',
+      socketTimeoutMS: 360000,
+      connectTimeoutMS: 10000,
+      retryWrites: true,
+      useRecoveryToken: true,
+      readPreference: [ReadPreference],
+      bson: BSON {}
+    },
+    logger: Logger { className: 'Connection' },
+    bson: BSON {},
+    tag: undefined,
+    maxBsonMessageSize: 67108864,
+    port: 27017,
+    host: '127.0.0.1',
+    socketTimeout: 360000,
+    keepAlive: true,
+    keepAliveInitialDelay: 120000,
+    connectionTimeout: 10000,
+    responseOptions: { promoteLongs: true, promoteValues: true, promoteBuffers: false },
+    flushing: false,
+    queue: [],
+    writeStream: null,
+    destroyed: false,
+    timedOut: false,
+    hashedName: '1af0a80ead1d9e3c1a02ad090ffe77ff1334aae9',
+    workItems: [],
+    socket: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 5,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      timeout: 360000,
+      [Symbol(asyncId)]: 4,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: 360000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 647,
+        _onTimeout: [Function: bound ],
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(asyncId)]: 15,
+        [Symbol(triggerId)]: 4
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    buffer: null,
+    sizeOfMessage: 0,
+    bytesRead: 0,
+    stubBuffer: null,
+    ismaster: {
+      ismaster: true,
+      maxBsonObjectSize: 16777216,
+      maxMessageSizeBytes: 48000000,
+      maxWriteBatchSize: 100000,
+      localTime: 2020-08-31T00:20:37.454Z,
+      logicalSessionTimeoutMinutes: 30,
+      minWireVersion: 0,
+      maxWireVersion: 6,
+      readOnly: false,
+      ok: 1
+    },
+    lastIsMasterMS: 15,
+    [Symbol(kCapture)]: false
+  },
+  message: BinMsg {
+    parsed: true,
+    raw: <Buffer 2d 00 00 00 62 00 00 00 01 00 00 00 dd 07 00 00 00 00 00 00 00 18 00 00 00 10 6e 00 01 00 00 00 01 6f 6b 00 00 00 00 00 00 00 f0 3f 00>,
+    data: <Buffer 00 00 00 00 00 18 00 00 00 10 6e 00 01 00 00 00 01 6f 6b 00 00 00 00 00 00 00 f0 3f 00>,
+    bson: BSON {},
+    opts: { promoteLongs: true, promoteValues: true, promoteBuffers: false },
+    length: 45,
+    requestId: 98,
+    responseTo: 1,
+    opCode: 2013,
+    fromCompressed: undefined,
+    responseFlags: 0,
+    checksumPresent: false,
+    moreToCome: false,
+    exhaustAllowed: false,
+    promoteLongs: true,
+    promoteValues: true,
+    promoteBuffers: false,
+    documents: [ [Object] ],
+    index: 29,
+    hashedName: '1af0a80ead1d9e3c1a02ad090ffe77ff1334aae9'
+  },
+  ops: [ { nome: 'Fulanis', idade: 28, _id: 5f4c42554e0ba254e4ac0992 } ],
+  insertedCount: 1,
+  insertedId: 5f4c42554e0ba254e4ac0992
+}
+[ { nome: 'Fulanis', idade: 28, _id: 5f4c42554e0ba254e4ac0992 } ]
+----------------
+
+http://mongodb.github.io/node-mongodb-native/3.6/api/
+       http://mongodb.github.io/node-mongodb-native/3.6/api/MongoClient.html
+              http://mongodb.github.io/node-mongodb-native/3.6/api/MongoClient.html#.connect
+       http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html
+              http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#insertOne
+                     http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#~writeOpCallback
+                            -> writeOpCallback
+                            -> insertOneWriteOpResult
+                            -----------------------------
+                            insertOneWriteOpResult Object
+                            Properties:
+                            Name	Type	Description
+                            insertedCount	number	
+                            The total amount of documents inserted.
+
+                            ops	Array.<object>	
+                            All the documents inserted using insertOne/insertMany/replaceOne. Documents contain the _id field if forceServerObjectId == false for insertOne/insertMany
+
+                            insertedId	ObjectId	
+                            The driver generated ObjectId for the insert operation.
+
+                            connection	object	
+                            The connection object used for the operation.
+
+                            result	object	
+                            The raw command result object returned from MongoDB (content might vary by server version).
+
+                            Properties
+                            Name	Type	Description
+                            ok	number	
+                            Is 1 if the command executed correctly.
+
+                            n	number	
+                            The total count of documents inserted.
+                            -----------------------------
+
+
+http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#insertMany
+
+digitar terminal: node 1_mongodb.js
+       -----------------
+       [
+              { nome: 'Chan', idade: 21, _id: 5f4c47fed0886d5ab013c7e8 },
+              { nome: 'Tom', idade: 30, _id: 5f4c47fed0886d5ab013c7e9 }  
+       ]
+       -----------------
+   refresh robo 3t
+
+
+digitar terminal: node 1_mongodb.js
+            --------------
+            Conectado corretamente!
+              [
+                     { descricao: 'Codar em javascript', completo: true, _id: 5f4c4e0428fd8a3174c473eb },
+                     { descricao: 'Ir ao mercado', completo: false, _id: 5f4c4e0428fd8a3174c473ec },
+                     { descricao: 'Caminhada', completo: false, _id: 5f4c4e0428fd8a3174c473ed }
+              ]
+            --------------
+
+digitar terminal: node 1_mongodb.js
+         o id é 5f4f0a314614ef2a3c2c507c
+
+
+https://docs.mongodb.com/manual/reference/method/ObjectId/
+http://mongodb.github.io/node-mongodb-native/3.6/api/ObjectID.html
+        getTimestamp()
+
+
+digitar terminal: node 1_mongodb.js
+      2020-09-02T03:05:35.000Z
+
+
+digitar terminal: node 1_mongodb.js
+  --> 2020-09-02T03:17:56.000Z
+  Conectado corretamente!
+  [ { _id: 5f4f0ee4704db659dc1c4162, nome: 'Michael', idade: 16 } ]
+
+ver robo 3t
+
+
+digitar terminal: node 1_mongodb.js
+    <Buffer 5f 4f 11 0f 1e 22 41 20 c8 aa f9 94>
+    12
+    5f4f110f1e224120c8aaf994
+    24
+
+
+http://mongodb.github.io/node-mongodb-native/3.6/api/
+    http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html
+        http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#find
+        http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#findOne
+
+
+no terminal: node 1_mongodb.js
+    Conectado corretamente!
+    { _id: 5f4c47fed0886d5ab013c7e8, nome: 'Chan', idade: 21 }
+
+
+no terminal: node 1_mongodb.js
+    Conectado corretamente!
+    null
+
+
+copiando um id do banco de dados
+
+no terminal: node 1_mongodb.js
+    Conectado corretamente!
+    null
+
+
+agora funciona
+no terminal: node 1_mongodb.js
+    Conectado corretamente!
+    { _id: 5f4f0ee4704db659dc1c4162, nome: 'Michael', idade: 16 }
+
+
+http://mongodb.github.io/node-mongodb-native/3.6/api/Cursor.html
+    http://mongodb.github.io/node-mongodb-native/3.6/api/Cursor.html#batchSize
+    http://mongodb.github.io/node-mongodb-native/3.6/api/Cursor.html#toArray
+
+
+
+
+no terminal: node 1_mongodb.js:
+    Conectado corretamente!
+    { _id: 5f4f0ee4704db659dc1c4162, nome: 'Michael', idade: 16 }
+    [
+      { _id: 5f4c47fed0886d5ab013c7e8, nome: 'Chan', idade: 21 },
+      { _id: 5f54556dcfa65b42800d9713, nome: 'Chan', idade: 21 } 
+    ]
+
+
+Conectado corretamente!
+{ _id: 5f4f0ee4704db659dc1c4162, nome: 'Michael', idade: 16 }
+[
+  { _id: 5f4c47fed0886d5ab013c7e8, nome: 'Chan', idade: 21 },
+  { _id: 5f54556dcfa65b42800d9713, nome: 'Chan', idade: 21 } 
+]
+2
+
+
+
+
+
+
+
+
