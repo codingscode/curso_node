@@ -26,17 +26,16 @@ MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
     console.log('Conectado corretamente!')
     const bancodados = cliente.db(nomeBancoDados)
 
-    const atualizarPromise = bancodados.collection('usuarios').updateOne({
+    bancodados.collection('usuarios').updateOne({
         _id: new ObjectID('5f54556dcfa65b42800d9714')
     }, {
          $set: { nome: 'Simon' }
     })
-    
-    atualizarPromise.then((resultado) => {
-        console.log(resultado)
-    }).catch((erro) => {
-        console.log(erro)
-    })
+        .then((resultado) => {
+            console.log(resultado)
+        }).catch((erro) => {
+            console.log(erro)
+        })
     
 
     
