@@ -26,16 +26,25 @@ MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
     console.log('Conectado corretamente!')
     const bancodados = cliente.db(nomeBancoDados)
 
-    bancodados.collection('usuarios').deleteMany({
+    bancodados.collection('tarefas').deleteOne({
+        descricao: 'Ir ao mercado'
+    }).then((resultado) => {
+          console.log(resultado)
+       }).catch((erro) => {
+          console.log(erro)
+       })
+    
+
+
+    /* bancodados.collection('usuarios').deleteMany({
         idade: 28
     })
         .then((resultado) => {
             console.log(resultado)
         }).catch((erro) => {
             console.log(erro)
-        })
-    
-    
+        }) */
+        
 })
 
 /* bancodados.collection('tarefas').updateMany({

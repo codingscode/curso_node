@@ -385,10 +385,12 @@ no terminal: node 1_mongodb.js
 http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#deleteOne
 http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#deleteMany
 
+
 apagando o que tem idade igual a 28
 
 
-
+no terminal: node 1_mongodb.js
+-> apagando uma tarefa específica
 
 
 
