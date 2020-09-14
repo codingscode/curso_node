@@ -26,35 +26,42 @@ MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
     console.log('Conectado corretamente!')
     const bancodados = cliente.db(nomeBancoDados)
 
-    bancodados.collection('tarefas').updateMany({
-        completo: false
-    }, {
-        $set: { completo: true }
-    })
-       .then((resultado) => {
-           console.log(resultado.modifiedCount)
-       }).catch((erro) => {
-           console.log(erro)
-       })
-
-    /* bancodados.collection('usuarios').updateOne({
-        _id: new ObjectID('5f54556dcfa65b42800d9714')
-    }, {
-         $inc: { idade: 4 }
+    bancodados.collection('usuarios').deleteMany({
+        idade: 28
     })
         .then((resultado) => {
             console.log(resultado)
         }).catch((erro) => {
             console.log(erro)
-        }) */
+        })
     
-
     
 })
 
+/* bancodados.collection('tarefas').updateMany({
+    completo: false
+}, {
+    $set: { completo: true }
+})
+   .then((resultado) => {
+       console.log(resultado.modifiedCount)
+   }).catch((erro) => {
+       console.log(erro)
+   }) */
+
+/* bancodados.collection('usuarios').updateOne({
+    _id: new ObjectID('5f54556dcfa65b42800d9714')
+}, {
+     $inc: { idade: 4 }
+})
+    .then((resultado) => {
+        console.log(resultado)
+    }).catch((erro) => {
+        console.log(erro)
+    }) */
 
 /* bancodados.collection('usuarios').findOne({_id: new ObjectID('5f4f0ee4704db659dc1c4162')}, (erro, usuario) => {
-     if (erro) {
+    if (erro) {
         return console.log('Não foi possível encontrar')
      }
 

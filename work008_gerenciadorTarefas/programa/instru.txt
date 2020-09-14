@@ -382,6 +382,32 @@ no terminal: node 1_mongodb.js
 -> altera para true os que são false
 
 
+http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#deleteOne
+http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#deleteMany
+
+apagando o que tem idade igual a 28
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
