@@ -375,6 +375,11 @@ no terminal: node 1_mongodb.js
 -> incrementa idade em 4
 
 
+http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#updateMany
+
+
+no terminal: node 1_mongodb.js
+-> altera para true os que são false
 
 
 
