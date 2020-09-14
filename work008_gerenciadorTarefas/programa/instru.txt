@@ -357,5 +357,14 @@ no terminal: node 1_mongodb.js :
       { _id: 5f4c4e0428fd8a3174c473ed, descricao: 'Caminhada', completo: false }
     ]
 
+-------------------------
+
+http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html
+    http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html#updateOne
+
+
+no terminal: node 1_mongodb.js
+-> atualiza um dos nomes dos usuarios
+
 
 

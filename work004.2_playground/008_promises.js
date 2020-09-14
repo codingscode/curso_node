@@ -15,5 +15,11 @@ trabalharPromise.then((resultado) => {
 })
 
 
-
 // node 008_promises.js
+
+
+/*                             fullfilled
+                            /
+Promise   -- pending --> 
+                            \ rejected 
+*/
