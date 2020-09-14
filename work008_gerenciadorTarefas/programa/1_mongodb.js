@@ -29,7 +29,7 @@ MongoClient.connect(conexaoURL, {useNewUrlParser: true}, (erro, cliente) => {
     bancodados.collection('usuarios').updateOne({
         _id: new ObjectID('5f54556dcfa65b42800d9714')
     }, {
-         $set: { nome: 'Simon' }
+         $inc: { idade: 4 }
     })
         .then((resultado) => {
             console.log(resultado)

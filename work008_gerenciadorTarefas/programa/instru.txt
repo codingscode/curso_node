@@ -366,5 +366,17 @@ http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html
 no terminal: node 1_mongodb.js
 -> atualiza um dos nomes dos usuarios
 
+mongodb update operators
+https://docs.mongodb.com/manual/reference/operator/update/
+    https://docs.mongodb.com/manual/reference/operator/update/inc/#up._S_inc
+
+
+no terminal: node 1_mongodb.js
+-> incrementa idade em 4
+
+
+
+
+
 
 
