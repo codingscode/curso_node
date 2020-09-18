@@ -393,11 +393,12 @@ no terminal: node 1_mongodb.js
 -> apagando uma tarefa específica
 
 
+https://mongoosejs.com/
+npm i mongoose@5.3.16
 
-
-
-
-
+no terminal: node src/db/mongoose.js
+res: { _id: 5f64214415981667a0a3cc29, nome: 'Fulanis', idade: '21', __v: 0 }
+ver robo 3t
 
 
 
