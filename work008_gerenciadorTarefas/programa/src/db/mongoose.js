@@ -7,12 +7,12 @@ mongoose.connect('mongodb://127.0.0.1:27017/gerenciador-tarefa-api', {
 
 const Usuario = mongoose.model('Usuario', {
     nome: { type: String },
-    idade: { type: String }
+    idade: { type: Number }
 })
 
 const eu = new Usuario({
     nome: 'Fulanis',
-    idade: 21
+    idade: 'nadaaver' // desfazer
 })
 
 eu.save().then((res) => {
