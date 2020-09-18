@@ -11,8 +11,8 @@ const Usuario = mongoose.model('Usuario', {
 })
 
 const eu = new Usuario({
-    nome: 'Fulanis',
-    idade: 'nadaaver' // desfazer
+    nome: 'Bob',
+    idade: 20
 })
 
 eu.save().then((res) => {
