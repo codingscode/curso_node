@@ -405,6 +405,16 @@ res: { _id: 5f642332fcaa7a61f4116a63, nome: 'Bob', idade: 20, __v: 0 }
 
 
 
+no terminal: node src/db/mongoose.js
+............
+tarefa: {
+  _id: 5f66c0f8b4ed8d3e20f8067e,
+  descricao: 'Aprender a biblioteca Mongoose',
+  completo: false,
+  __v: 0
+}
+
+ver robo 3t
 
 
 

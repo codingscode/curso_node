@@ -10,6 +10,23 @@ const Usuario = mongoose.model('Usuario', {
     idade: { type: Number }
 })
 
+const Tarefa = mongoose.model('Tarefa', {
+    descricao: { type: String },
+    completo: { type: Boolean }
+})
+
+const tarefa = new Tarefa({
+    descricao: 'Aprender a biblioteca Mongoose', completo: false
+})
+
+tarefa.save().then((tarefa) => {
+    console.log('tarefa:', tarefa)
+}).catch((erro) => {
+    console.log('erro:', erro)
+})
+
+/*
+
 const eu = new Usuario({
     nome: 'Bob',
     idade: 20
@@ -20,7 +37,7 @@ eu.save().then((res) => {
  }).catch((erro) => {
     console.log('Erro:', erro)
  })
-
+ */
 
 // node src/db/mongoose.js
 
