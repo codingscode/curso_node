@@ -11,7 +11,7 @@ const Usuario = mongoose.model('Usuario', {
 })
 
 const eu = new Usuario({
-    
+    nome: 'Dorothy'
 })
 
 eu.save().then((res) => {
