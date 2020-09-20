@@ -429,7 +429,8 @@ res: { _id: 5f66c47e17277c368cc0e2ee, nome: 'Dorothy', __v: 0 }
 ver robo 3t
 
 
-
+no terminal: node src/db/mongoose.js
+res: { _id: 5f66c65dd5ff3f29c4b6ffc1, nome: 'Dorothy', __v: 0 }
 
 
 

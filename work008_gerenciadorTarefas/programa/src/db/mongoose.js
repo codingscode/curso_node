@@ -7,7 +7,14 @@ mongoose.connect('mongodb://127.0.0.1:27017/gerenciador-tarefa-api', {
 
 const Usuario = mongoose.model('Usuario', {
     nome: { type: String, required: true },
-    idade: { type: Number }
+    idade: {
+        type: Number,
+        validar(valor) {
+            if (valor < 0) {
+                throw new Error('idade deve ser um valor positivo')
+            }
+        }
+    }
 })
 
 const eu = new Usuario({
