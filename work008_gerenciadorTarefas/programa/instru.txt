@@ -417,6 +417,37 @@ tarefa: {
 ver robo 3t
 
 
+https://mongoosejs.com/docs/guide.html
+    https://mongoosejs.com/docs/validation.html
+
+no terminal: node src/db/mongoose.js
+   --- mensagem de erro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
