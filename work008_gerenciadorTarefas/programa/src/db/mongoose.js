@@ -9,7 +9,7 @@ const Usuario = mongoose.model('Usuario', {
     nome: { type: String, required: true },
     idade: {
         type: Number,
-        validar(valor) {
+        validate(valor) {
             if (valor < 0) {
                 throw new Error('idade deve ser um valor positivo')
             }
@@ -18,7 +18,7 @@ const Usuario = mongoose.model('Usuario', {
 })
 
 const eu = new Usuario({
-    nome: 'Dorothy'
+    nome: 'Dorothy', idade: -20
 })
 
 eu.save().then((res) => {

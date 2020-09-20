@@ -433,11 +433,15 @@ no terminal: node src/db/mongoose.js
 res: { _id: 5f66c65dd5ff3f29c4b6ffc1, nome: 'Dorothy', __v: 0 }
 
 
-
-
-
-
-
+no terminal: node src/db/mongoose.js
+....
+properties: [Object],
+      kind: 'user defined',
+      path: 'idade',
+      value: -20,
+      reason: Error: idade deve ser um valor positivo
+.......
+nao adiciona
 
 
 
