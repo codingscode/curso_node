@@ -8,9 +8,10 @@ mongoose.connect('mongodb://127.0.0.1:27017/gerenciador-tarefa-api', {
 })
 
 const Usuario = mongoose.model('Usuario', {
-    nome: { type: String, required: true },
+    nome: { type: String, required: true, trim: true },
     idade: {
         type: Number,
+        default: 0,
         validate(valor) {
             if (valor < 0) {
                 throw new Error('idade deve ser um valor positivo')
@@ -20,6 +21,8 @@ const Usuario = mongoose.model('Usuario', {
     email: { 
         type: String,
         required: true,
+        trim: true,
+        lowercase: true,
         validate(valor) {
             if (!validador.isEmail(valor)) {
                 throw new Error('Email inválido')
@@ -29,7 +32,7 @@ const Usuario = mongoose.model('Usuario', {
 })
 
 const eu = new Usuario({
-    nome: 'Laura', email: 'laurinha@'
+    nome: '  Tom  ', email: 'TOMTECHIT@GMAIL.COM         '
 })
 
 eu.save().then((res) => {

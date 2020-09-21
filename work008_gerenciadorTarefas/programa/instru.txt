@@ -454,7 +454,10 @@ no terminal: node src/db/mongoose.js
     ... Erro: Error [ValidationError]: Usuario validation failed: email: Email inválido ...
 
 
+https://mongoosejs.com/docs/schematypes.html
 
+no terminal: node src/db/mongoose.js
+    res: { idade: 0, _id: 5f680b545682a54b84a36640, nome: 'Tom', email: 'tomtechit@gmail.com', __v: 0 }
 
 
 
