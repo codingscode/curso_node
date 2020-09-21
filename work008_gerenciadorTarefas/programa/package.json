@@ -18,7 +18,7 @@
     "mongodb": "^3.6.0",
     "mongoose": "^5.3.16",
     "request": "^2.88.2",
-    "validator": "^13.0.0",
+    "validator": "^13.1.17",
     "yargs": "^15.3.1"
   }
 }

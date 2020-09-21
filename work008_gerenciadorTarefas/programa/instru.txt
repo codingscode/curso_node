@@ -445,9 +445,13 @@ nao adiciona
 
 
 
+https://www.npmjs.com/package/validator
+no terminal: npm i validator
 
 
-
+no terminal: node src/db/mongoose.js
+    aparece erro
+    ... Erro: Error [ValidationError]: Usuario validation failed: email: Email inválido ...
 
 
 

@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+const validador = require('validator')
+
 
 mongoose.connect('mongodb://127.0.0.1:27017/gerenciador-tarefa-api', {
     useNewUrlParser: true,
@@ -14,11 +16,20 @@ const Usuario = mongoose.model('Usuario', {
                 throw new Error('idade deve ser um valor positivo')
             }
         }
-    }
+    },
+    email: { 
+        type: String,
+        required: true,
+        validate(valor) {
+            if (!validador.isEmail(valor)) {
+                throw new Error('Email inválido')
+            }
+        }
+     }
 })
 
 const eu = new Usuario({
-    nome: 'Dorothy', idade: -20
+    nome: 'Laura', email: 'laurinha@'
 })
 
 eu.save().then((res) => {
