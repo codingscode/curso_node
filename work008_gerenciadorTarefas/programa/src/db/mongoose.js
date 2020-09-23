@@ -54,7 +54,7 @@ const Tarefa = mongoose.model('Tarefa', {
 })
 
 const tarefa = new Tarefa({
-    /* descricao: 'Estudar React Native', completo: false */
+    descricao: '    Estudar depois React Native'
 })
 
 tarefa.save().then((tarefa) => {

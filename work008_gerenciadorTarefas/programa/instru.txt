@@ -475,5 +475,18 @@ no terminal: node src/db/mongoose.js
     há erro
     ... descricao: MongooseError [ValidatorError]: Path `descricao` is required. ...
 
+no terminal: node src/db/mongoose.js
+      tarefa: { completo: false, _id: 5f6aa2c59756904ca09584b6, descricao: 'Estudar depois React Native', __v: 0 }
+ver robo 3t
+
+
+
+
+
+
+
+
+
+
 
 
