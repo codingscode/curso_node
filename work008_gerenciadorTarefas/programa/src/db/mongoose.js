@@ -39,7 +39,7 @@ const Usuario = mongoose.model('Usuario', {
 })
 
 const eu = new Usuario({
-    nome: '  Tom  ', email: 'TOMTECHIT@GMAIL.COM         ', senha: 'Senha123'
+    nome: '  Tom  ', email: 'TOMTECHIT@GMAIL.COM         ', senha: 'aladin2018'
 })
 
 eu.save().then((res) => {
