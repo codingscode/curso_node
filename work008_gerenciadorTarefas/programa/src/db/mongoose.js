@@ -28,11 +28,18 @@ const Usuario = mongoose.model('Usuario', {
                 throw new Error('Email inválido')
             }
         }
-     }
+     },
+     senha: { type: String, required: true, minlength: 7, trim: true,
+        validate(valor) {
+            if (valor.toLowerCase().includes('senha')) {
+               throw new Error('Senha não pode conter "senha"')
+            }
+        }
+    }
 })
 
 const eu = new Usuario({
-    nome: '  Tom  ', email: 'TOMTECHIT@GMAIL.COM         '
+    nome: '  Tom  ', email: 'TOMTECHIT@GMAIL.COM         ', senha: '    ws8j    '
 })
 
 eu.save().then((res) => {
