@@ -471,6 +471,9 @@ no terminal: node src/db/mongoose.js
     res: { idade: 0, _id: 5f6a9fc7533a823b544eeee5, nome: 'Tom', email: 'tomtechit@gmail.com', senha: 'aladin2018',__v: 0 }
 ver robo 3t
 
+no terminal: node src/db/mongoose.js
+    há erro
+    ... descricao: MongooseError [ValidatorError]: Path `descricao` is required. ...
 
 
 

@@ -38,30 +38,30 @@ const Usuario = mongoose.model('Usuario', {
     }
 })
 
-const eu = new Usuario({
-    nome: '  Tom  ', email: 'TOMTECHIT@GMAIL.COM         ', senha: 'aladin2018'
+/* const eu = new Usuario({
+    nome: 'Jeff', email: 'jeffallan@gmail.com', senha: 'eyesight'
 })
 
 eu.save().then((res) => {
     console.log('res:', res)
  }).catch((erro) => {
     console.log('Erro:', erro)
- })
+ }) */
 
 const Tarefa = mongoose.model('Tarefa', {
-    descricao: { type: String },
-    completo: { type: Boolean }
+    descricao: { type: String, required: true, trim: true },
+    completo: { type: Boolean, default: false }
 })
 
-/* const tarefa = new Tarefa({
-    descricao: 'Aprender a biblioteca Mongoose', completo: false
+const tarefa = new Tarefa({
+    /* descricao: 'Estudar React Native', completo: false */
 })
 
 tarefa.save().then((tarefa) => {
     console.log('tarefa:', tarefa)
 }).catch((erro) => {
     console.log('erro:', erro)
-}) */
+})
 
 
 
