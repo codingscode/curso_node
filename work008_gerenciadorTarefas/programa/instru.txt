@@ -463,7 +463,9 @@ no terminal: node src/db/mongoose.js
     há erro
     ...  Erro: Error [ValidationError]: Usuario validation failed: senha: Path `senha` (`ws8j`) is shorter than the minimum allowed length (7).
 
-
+no terminal: node src/db/mongoose.js
+    há erro
+    ... senha: MongooseError [ValidatorError]: Senha não pode conter "senha" ...
 
 
 
