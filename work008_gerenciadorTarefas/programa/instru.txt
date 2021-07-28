@@ -496,6 +496,32 @@ no terminal:
    npm i express@4.16.4
 
 
+no terminal:
+   npm run dev
+
+mensagem
+""
+[nodemon] 1.18.9
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node src/index.js`
+Servidor esta apto na porta {porta}
+""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
